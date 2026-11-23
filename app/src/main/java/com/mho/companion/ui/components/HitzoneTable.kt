@@ -84,7 +84,7 @@ fun HitzoneTable(
                     if (showNotes && zone.note.isNotBlank() && scale >= 1f) {
                         Text(
                             text = zone.note,
-                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                             color = TextSecondary,
                             maxLines = 2,
                             overflow = TextOverflow.Ellipsis

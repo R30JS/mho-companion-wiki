@@ -41,6 +41,7 @@ import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.mho.companion.domain.model.Element
 import com.mho.companion.domain.model.Monster
@@ -282,7 +283,7 @@ private fun WishlistCard(
                                 if (item.source.isNotBlank()) {
                                     Text(
                                         text = item.source,
-                                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                                         color = TextMuted,
                                         maxLines = 1
                                     )
@@ -320,7 +321,7 @@ private fun WishlistCard(
                     }
                     Text(
                         text = "Tap the have/target number to edit the target.",
-                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                         color = TextMuted,
                         modifier = Modifier.padding(top = 2.dp)
                     )
@@ -380,7 +381,7 @@ private fun MonsterCard(monster: Monster, onClick: () -> Unit) {
                 Spacer(Modifier.height(4.dp))
                 Text(
                     text = monster.habitat,
-                    style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                    style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                     color = TextMuted,
                     maxLines = 1
                 )

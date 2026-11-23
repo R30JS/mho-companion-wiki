@@ -58,9 +58,9 @@ VALIDATION OK
 
 ## CI / release
 
-1. Push this repo to GitHub (main branch).
-2. GitHub Actions runs `./gradlew assembleDebug --no-daemon` with JDK 21 + Android SDK 35.
-3. On success, download `mho-companion-wiki-debug-apk` from the workflow run artifacts and sideload the APK on a device/emulator (API 26+).
+1. Repo: https://github.com/R30JS/mho-companion-wiki (branch `master`).
+2. GitHub Actions runs `./gradlew assembleDebug --no-daemon` with JDK 21 + Android SDK 35 on every push.
+3. On success, open https://github.com/R30JS/mho-companion-wiki/actions, download the `mho-companion-wiki-debug-apk` artifact, unzip it, and sideload `app-debug.apk` on a device/emulator (API 26+).
 
 Install the APK:
 

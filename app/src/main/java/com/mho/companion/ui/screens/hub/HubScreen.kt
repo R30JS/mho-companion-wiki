@@ -453,7 +453,7 @@ private fun PreHuntChecklistCard(
                     if (!isChecked) {
                         Text(
                             text = item.hint,
-                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                             color = TextMuted
                         )
                     }
@@ -594,7 +594,7 @@ private fun AdventurerPickRow(adventurer: Adventurer, reason: String) {
             }
             Text(
                 text = "${adventurer.element.label} · ${adventurer.weaponType.label} · $reason",
-                style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                 color = TextSecondary
             )
         }

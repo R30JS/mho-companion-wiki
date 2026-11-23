@@ -312,7 +312,7 @@ private fun AilmentSheet(ailments: List<Ailment>) {
                     if (ailment.tip.isNotBlank()) {
                         Text(
                             text = ailment.tip,
-                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                             color = TextMuted
                         )
                     }
@@ -350,7 +350,7 @@ private fun RecipeSheet(recipes: List<Recipe>) {
                     )
                     Text(
                         text = recipe.ingredients.joinToString("  +  "),
-                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                         color = AccentCyan
                     )
                 }
@@ -372,7 +372,7 @@ private fun RecipeSheet(recipes: List<Recipe>) {
         Spacer(Modifier.height(4.dp))
         Text(
             text = "Craft from the radial menu. Keep Honey and Antidote Herbs in the item pouch.",
-            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
             color = TextMuted
         )
     }

@@ -169,7 +169,7 @@ fun MonsterDetailScreen(
                         Spacer(Modifier.height(6.dp))
                         Text(
                             text = "Red = weakest · yellow = medium · gray = immune. Aim for 3-dot parts.",
-                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                             color = TextMuted
                         )
                     }
@@ -220,7 +220,7 @@ fun MonsterDetailScreen(
                                         }
                                         Text(
                                             text = "${pick.adventurer.element.label} · ${pick.adventurer.weaponType.label} · ${pick.reason}",
-                                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                                             color = TextSecondary
                                         )
                                     }
@@ -256,7 +256,7 @@ fun MonsterDetailScreen(
                                     )
                                     Text(
                                         text = "Rarity ${material.rarity} · ${material.source}",
-                                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                                         color = TextMuted
                                     )
                                 }
@@ -270,7 +270,7 @@ fun MonsterDetailScreen(
                         Spacer(Modifier.height(6.dp))
                         Text(
                             text = "Tracked materials appear in the Farming Wishlist at the top of the Bestiary.",
-                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                             color = TextMuted
                         )
                     }

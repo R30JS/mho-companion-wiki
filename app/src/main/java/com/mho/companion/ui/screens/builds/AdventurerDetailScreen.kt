@@ -225,7 +225,7 @@ fun AdventurerDetailScreen(
                         Spacer(Modifier.height(6.dp))
                         Text(
                             text = "Ratings are seed estimates from the bundled wiki data, not official tier lists.",
-                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                             color = TextMuted,
                             modifier = Modifier.padding(top = 4.dp)
                         )

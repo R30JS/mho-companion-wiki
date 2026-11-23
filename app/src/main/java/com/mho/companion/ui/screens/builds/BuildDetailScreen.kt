@@ -147,7 +147,7 @@ fun BuildDetailScreen(
                             )
                             Text(
                                 text = visage.pieces.joinToString(" · "),
-                                style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                                style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                                 color = TextMuted
                             )
                         }

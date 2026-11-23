@@ -45,6 +45,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
@@ -230,7 +231,7 @@ fun SettingsScreen(
                             Spacer(Modifier.width(8.dp))
                             Text(
                                 text = if (syncing) "Checking remote versions…" else "Assets always stay available offline.",
-                                style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                                style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                                 color = TextMuted,
                                 modifier = Modifier.weight(1f)
                             )
@@ -300,7 +301,7 @@ fun SettingsScreen(
                         Spacer(Modifier.height(6.dp))
                         Text(
                             text = "Import replaces local user data. Module cache and settings stay intact.",
-                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                             color = TextMuted
                         )
                     }
@@ -432,7 +433,7 @@ fun SettingsScreen(
                         Spacer(Modifier.height(6.dp))
                         Text(
                             text = "Android 13+ may hide the foreground notification until notification permission is allowed. The overlay bubble still works.",
-                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                             color = TextMuted
                         )
                     }
@@ -454,7 +455,7 @@ fun SettingsScreen(
                         Spacer(Modifier.height(7.dp))
                         Text(
                             text = "Fan-made companion. Not affiliated with Capcom, Niantic, or the Monster Hunter Outlanders team. Code rewards and drop data are community references; verify in-game.",
-                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1f),
+                            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.1.sp),
                             color = TextMuted
                         )
                     }
