@@ -1,0 +1,1601 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-23",
+  "elements": [
+    {
+      "element": "FIRE",
+      "summary": "Stack Fire Attack and burn the head during every down. Ink of Flames carries the raw while Ruger Aidal keeps element buildup rolling.",
+      "visageSet": {
+        "name": "Ink of Flames",
+        "pieces": [
+          "Ink of Flames Helm",
+          "Ink of Flames Mail",
+          "Ink of Flames Vambraces",
+          "Ink of Flames Coil",
+          "Ink of Flames Greaves"
+        ],
+        "bonus": "Fire Attack +3 and +15% Fire damage while Well-Fed."
+      },
+      "coreVisages": [
+        {
+          "name": "Ruger Aidal",
+          "effect": "Element damage +10% and faster elemental buildup."
+        },
+        {
+          "name": "Radiant Rathian",
+          "effect": "Critical Element +12% while at full health."
+        }
+      ],
+      "buddies": [
+        {
+          "name": "Kojiro",
+          "role": "Assault",
+          "skill": "Blazing Fang - tandem attack with heavy Fire buildup."
+        },
+        {
+          "name": "Pipa",
+          "role": "Support",
+          "skill": "Warm Canteen - heals and refreshes Well-Fed."
+        }
+      ],
+      "weapons": [
+        {
+          "id": "fire-hbg",
+          "weaponType": "HEAVY_BOWGUN",
+          "name": "Cinderblast Apex",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Assault at the Smithy after clearing the 6-star Fire hunt. Upgrade path: Iron Assault -> Cinderblast Apex.",
+          "attack": 239,
+          "elementValue": 42,
+          "materials": [
+            {
+              "name": "Rathalos Scale",
+              "qty": 4
+            },
+            {
+              "name": "Flame Sac",
+              "qty": 2
+            },
+            {
+              "name": "Anjanath Pelt",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Fire Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Constitution 2",
+            "Artillery 3"
+          ],
+          "insight": "Open with a trap or mount, then dump your highest Fire combo while the burn tick is active. Aim for the head from mid range and reload behind cover."
+        },
+        {
+          "id": "fire-ls",
+          "weaponType": "LONG_SWORD",
+          "name": "Emberfang Katana",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Katana at the Smithy after clearing the 6-star Fire hunt. Upgrade path: Iron Katana -> Emberfang Katana.",
+          "attack": 244,
+          "elementValue": 44,
+          "materials": [
+            {
+              "name": "Rathalos Scale",
+              "qty": 4
+            },
+            {
+              "name": "Flame Sac",
+              "qty": 2
+            },
+            {
+              "name": "Anjanath Pelt",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Fire Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Constitution 2",
+            "Quick Sheath 3"
+          ],
+          "insight": "Open with a trap or mount, then dump your highest Fire combo while the burn tick is active. Land Spirit Helm Breaker on a downed head."
+        },
+        {
+          "id": "fire-db",
+          "weaponType": "DUAL_BLADES",
+          "name": "Cinder Claws",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Claws at the Smithy after clearing the 6-star Fire hunt. Upgrade path: Iron Claws -> Cinder Claws.",
+          "attack": 249,
+          "elementValue": 46,
+          "materials": [
+            {
+              "name": "Rathalos Scale",
+              "qty": 4
+            },
+            {
+              "name": "Flame Sac",
+              "qty": 2
+            },
+            {
+              "name": "Anjanath Pelt",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Fire Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Constitution 2",
+            "Constitution 3"
+          ],
+          "insight": "Open with a trap or mount, then dump your highest Fire combo while the burn tick is active. Enter Demon Mode after a perfect dodge to keep element uptime."
+        },
+        {
+          "id": "fire-bow",
+          "weaponType": "BOW",
+          "name": "Flame Arc",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Bow at the Smithy after clearing the 6-star Fire hunt. Upgrade path: Iron Bow -> Flame Arc.",
+          "attack": 254,
+          "elementValue": 42,
+          "materials": [
+            {
+              "name": "Rathalos Scale",
+              "qty": 4
+            },
+            {
+              "name": "Flame Sac",
+              "qty": 2
+            },
+            {
+              "name": "Anjanath Pelt",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Fire Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Constitution 2",
+            "Bow Charge Plus"
+          ],
+          "insight": "Open with a trap or mount, then dump your highest Fire combo while the burn tick is active. Use Power Shot on the weakest part and keep coatings stocked."
+        },
+        {
+          "id": "fire-gs",
+          "weaponType": "GREAT_SWORD",
+          "name": "Furnace Cleaver",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Great Sword at the Smithy after clearing the 6-star Fire hunt. Upgrade path: Iron Great Sword -> Furnace Cleaver.",
+          "attack": 259,
+          "elementValue": 44,
+          "materials": [
+            {
+              "name": "Rathalos Scale",
+              "qty": 4
+            },
+            {
+              "name": "Flame Sac",
+              "qty": 2
+            },
+            {
+              "name": "Anjanath Pelt",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Fire Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Constitution 2",
+            "Focus 3"
+          ],
+          "insight": "Open with a trap or mount, then dump your highest Fire combo while the burn tick is active. Charge only on trapped or downed windows."
+        },
+        {
+          "id": "fire-cb",
+          "weaponType": "CHARGE_BLADE",
+          "name": "Magma Aegis",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Charge Blade at the Smithy after clearing the 6-star Fire hunt. Upgrade path: Iron Charge Blade -> Magma Aegis.",
+          "attack": 264,
+          "elementValue": 46,
+          "materials": [
+            {
+              "name": "Rathalos Scale",
+              "qty": 4
+            },
+            {
+              "name": "Flame Sac",
+              "qty": 2
+            },
+            {
+              "name": "Anjanath Pelt",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Fire Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Constitution 2",
+            "Guard 3"
+          ],
+          "insight": "Open with a trap or mount, then dump your highest Fire combo while the burn tick is active. SAED after a guard point and keep the shield charged."
+        },
+        {
+          "id": "fire-hammer",
+          "weaponType": "HAMMER",
+          "name": "Forgefall Maul",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Hammer at the Smithy after clearing the 6-star Fire hunt. Upgrade path: Iron Hammer -> Forgefall Maul.",
+          "attack": 269,
+          "elementValue": 42,
+          "materials": [
+            {
+              "name": "Rathalos Scale",
+              "qty": 4
+            },
+            {
+              "name": "Flame Sac",
+              "qty": 2
+            },
+            {
+              "name": "Anjanath Pelt",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Fire Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Constitution 2",
+            "Slugger 3"
+          ],
+          "insight": "Open with a trap or mount, then dump your highest Fire combo while the burn tick is active. Target the head; a stun is a free team window."
+        },
+        {
+          "id": "fire-lance",
+          "weaponType": "LANCE",
+          "name": "Pyre Guard",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Lance at the Smithy after clearing the 6-star Fire hunt. Upgrade path: Iron Lance -> Pyre Guard.",
+          "attack": 274,
+          "elementValue": 44,
+          "materials": [
+            {
+              "name": "Rathalos Scale",
+              "qty": 4
+            },
+            {
+              "name": "Flame Sac",
+              "qty": 2
+            },
+            {
+              "name": "Anjanath Pelt",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Fire Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Constitution 2",
+            "Guard 3"
+          ],
+          "insight": "Open with a trap or mount, then dump your highest Fire combo while the burn tick is active. Counter into a triple poke and stay glued to the weak point."
+        }
+      ]
+    },
+    {
+      "element": "WATER",
+      "summary": "Water is the safest all-round element. Ink of Tides plus Kushala Daora gives long dodge windows and consistent element uptime.",
+      "visageSet": {
+        "name": "Ink of Tides",
+        "pieces": [
+          "Ink of Tides Helm",
+          "Ink of Tides Mail",
+          "Ink of Tides Vambraces",
+          "Ink of Tides Coil",
+          "Ink of Tides Greaves"
+        ],
+        "bonus": "Water Attack +3 and Evade Window +1."
+      },
+      "coreVisages": [
+        {
+          "name": "Ruger Aidal",
+          "effect": "Element damage +10% and faster elemental buildup."
+        },
+        {
+          "name": "Kushala Daora",
+          "effect": "Short wind-pressure immunity and faster stamina recovery."
+        }
+      ],
+      "buddies": [
+        {
+          "name": "Icarus",
+          "role": "Assault",
+          "skill": "Dive Talon - aerial tandem that opens weak points."
+        },
+        {
+          "name": "Ro",
+          "role": "Support",
+          "skill": "Tidal Ward - cleanses blights and heals nearby allies."
+        }
+      ],
+      "weapons": [
+        {
+          "id": "water-hbg",
+          "weaponType": "HEAVY_BOWGUN",
+          "name": "Tidebreaker Cannon",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Assault at the Smithy after clearing the 5-star Water hunt. Upgrade path: Iron Assault -> Tidebreaker Cannon.",
+          "attack": 238,
+          "elementValue": 38,
+          "materials": [
+            {
+              "name": "Barroth Ridge",
+              "qty": 4
+            },
+            {
+              "name": "Aqua Sac",
+              "qty": 2
+            },
+            {
+              "name": "Tobi-Kadachi Membrane",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Water Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Evade Window 2",
+            "Artillery 3"
+          ],
+          "insight": "Wash off mud armor before committing to a combo; Water damage is wasted on a coated Barroth. Aim for the head from mid range and reload behind cover."
+        },
+        {
+          "id": "water-ls",
+          "weaponType": "LONG_SWORD",
+          "name": "Ripple Edge",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Katana at the Smithy after clearing the 5-star Water hunt. Upgrade path: Iron Katana -> Ripple Edge.",
+          "attack": 243,
+          "elementValue": 40,
+          "materials": [
+            {
+              "name": "Barroth Ridge",
+              "qty": 4
+            },
+            {
+              "name": "Aqua Sac",
+              "qty": 2
+            },
+            {
+              "name": "Tobi-Kadachi Membrane",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Water Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Evade Window 2",
+            "Quick Sheath 3"
+          ],
+          "insight": "Wash off mud armor before committing to a combo; Water damage is wasted on a coated Barroth. Land Spirit Helm Breaker on a downed head."
+        },
+        {
+          "id": "water-db",
+          "weaponType": "DUAL_BLADES",
+          "name": "Torrent Claws",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Claws at the Smithy after clearing the 5-star Water hunt. Upgrade path: Iron Claws -> Torrent Claws.",
+          "attack": 248,
+          "elementValue": 42,
+          "materials": [
+            {
+              "name": "Barroth Ridge",
+              "qty": 4
+            },
+            {
+              "name": "Aqua Sac",
+              "qty": 2
+            },
+            {
+              "name": "Tobi-Kadachi Membrane",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Water Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Evade Window 2",
+            "Constitution 3"
+          ],
+          "insight": "Wash off mud armor before committing to a combo; Water damage is wasted on a coated Barroth. Enter Demon Mode after a perfect dodge to keep element uptime."
+        },
+        {
+          "id": "water-bow",
+          "weaponType": "BOW",
+          "name": "Monsoon Arc",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Bow at the Smithy after clearing the 5-star Water hunt. Upgrade path: Iron Bow -> Monsoon Arc.",
+          "attack": 253,
+          "elementValue": 38,
+          "materials": [
+            {
+              "name": "Barroth Ridge",
+              "qty": 4
+            },
+            {
+              "name": "Aqua Sac",
+              "qty": 2
+            },
+            {
+              "name": "Tobi-Kadachi Membrane",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Water Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Evade Window 2",
+            "Bow Charge Plus"
+          ],
+          "insight": "Wash off mud armor before committing to a combo; Water damage is wasted on a coated Barroth. Use Power Shot on the weakest part and keep coatings stocked."
+        },
+        {
+          "id": "water-gs",
+          "weaponType": "GREAT_SWORD",
+          "name": "Deluge Blade",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Great Sword at the Smithy after clearing the 5-star Water hunt. Upgrade path: Iron Great Sword -> Deluge Blade.",
+          "attack": 258,
+          "elementValue": 40,
+          "materials": [
+            {
+              "name": "Barroth Ridge",
+              "qty": 4
+            },
+            {
+              "name": "Aqua Sac",
+              "qty": 2
+            },
+            {
+              "name": "Tobi-Kadachi Membrane",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Water Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Evade Window 2",
+            "Focus 3"
+          ],
+          "insight": "Wash off mud armor before committing to a combo; Water damage is wasted on a coated Barroth. Charge only on trapped or downed windows."
+        },
+        {
+          "id": "water-cb",
+          "weaponType": "CHARGE_BLADE",
+          "name": "Aqua Aegis",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Charge Blade at the Smithy after clearing the 5-star Water hunt. Upgrade path: Iron Charge Blade -> Aqua Aegis.",
+          "attack": 263,
+          "elementValue": 42,
+          "materials": [
+            {
+              "name": "Barroth Ridge",
+              "qty": 4
+            },
+            {
+              "name": "Aqua Sac",
+              "qty": 2
+            },
+            {
+              "name": "Tobi-Kadachi Membrane",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Water Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Evade Window 2",
+            "Guard 3"
+          ],
+          "insight": "Wash off mud armor before committing to a combo; Water damage is wasted on a coated Barroth. SAED after a guard point and keep the shield charged."
+        },
+        {
+          "id": "water-hammer",
+          "weaponType": "HAMMER",
+          "name": "Wavecrusher",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Hammer at the Smithy after clearing the 5-star Water hunt. Upgrade path: Iron Hammer -> Wavecrusher.",
+          "attack": 268,
+          "elementValue": 38,
+          "materials": [
+            {
+              "name": "Barroth Ridge",
+              "qty": 4
+            },
+            {
+              "name": "Aqua Sac",
+              "qty": 2
+            },
+            {
+              "name": "Tobi-Kadachi Membrane",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Water Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Evade Window 2",
+            "Slugger 3"
+          ],
+          "insight": "Wash off mud armor before committing to a combo; Water damage is wasted on a coated Barroth. Target the head; a stun is a free team window."
+        },
+        {
+          "id": "water-lance",
+          "weaponType": "LANCE",
+          "name": "Coral Guard",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Lance at the Smithy after clearing the 5-star Water hunt. Upgrade path: Iron Lance -> Coral Guard.",
+          "attack": 273,
+          "elementValue": 40,
+          "materials": [
+            {
+              "name": "Barroth Ridge",
+              "qty": 4
+            },
+            {
+              "name": "Aqua Sac",
+              "qty": 2
+            },
+            {
+              "name": "Tobi-Kadachi Membrane",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 1
+            }
+          ],
+          "armorSkills": [
+            "Water Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Evade Window 2",
+            "Guard 3"
+          ],
+          "insight": "Wash off mud armor before committing to a combo; Water damage is wasted on a coated Barroth. Counter into a triple poke and stay glued to the weak point."
+        }
+      ]
+    },
+    {
+      "element": "THUNDER",
+      "summary": "Thunder punishes Kushala Daora and Legiana. Ink of Storms with Kushala Daora turns roars and wind pressure into free openings.",
+      "visageSet": {
+        "name": "Ink of Storms",
+        "pieces": [
+          "Ink of Storms Helm",
+          "Ink of Storms Mail",
+          "Ink of Storms Vambraces",
+          "Ink of Storms Coil",
+          "Ink of Storms Greaves"
+        ],
+        "bonus": "Thunder Attack +3 and Stamina Surge +1."
+      },
+      "coreVisages": [
+        {
+          "name": "Kushala Daora",
+          "effect": "Short wind-pressure immunity and faster stamina recovery."
+        },
+        {
+          "name": "Ruger Aidal",
+          "effect": "Element damage +10% and faster elemental buildup."
+        }
+      ],
+      "buddies": [
+        {
+          "name": "Daisho",
+          "role": "Assault",
+          "skill": "Storm Fang - rapid tandem with Thunder buildup."
+        },
+        {
+          "name": "Icarus",
+          "role": "Support",
+          "skill": "Sky Mend - group heal after a roar window."
+        }
+      ],
+      "weapons": [
+        {
+          "id": "thunder-hbg",
+          "weaponType": "HEAVY_BOWGUN",
+          "name": "Stormcannon",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Assault at the Smithy after clearing the 6-star Thunder hunt. Upgrade path: Iron Assault -> Stormcannon.",
+          "attack": 239,
+          "elementValue": 45,
+          "materials": [
+            {
+              "name": "Tobi-Kadachi Pelt",
+              "qty": 4
+            },
+            {
+              "name": "Thunder Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Webbing",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Thunder Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Stamina Surge 2",
+            "Artillery 3"
+          ],
+          "insight": "Break the wind aura first; Thunder damage only starts stacking after the aura drops. Aim for the head from mid range and reload behind cover."
+        },
+        {
+          "id": "thunder-ls",
+          "weaponType": "LONG_SWORD",
+          "name": "Thunderclap",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Katana at the Smithy after clearing the 6-star Thunder hunt. Upgrade path: Iron Katana -> Thunderclap.",
+          "attack": 244,
+          "elementValue": 47,
+          "materials": [
+            {
+              "name": "Tobi-Kadachi Pelt",
+              "qty": 4
+            },
+            {
+              "name": "Thunder Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Webbing",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Thunder Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Stamina Surge 2",
+            "Quick Sheath 3"
+          ],
+          "insight": "Break the wind aura first; Thunder damage only starts stacking after the aura drops. Land Spirit Helm Breaker on a downed head."
+        },
+        {
+          "id": "thunder-db",
+          "weaponType": "DUAL_BLADES",
+          "name": "Volt Fangs",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Claws at the Smithy after clearing the 6-star Thunder hunt. Upgrade path: Iron Claws -> Volt Fangs.",
+          "attack": 249,
+          "elementValue": 49,
+          "materials": [
+            {
+              "name": "Tobi-Kadachi Pelt",
+              "qty": 4
+            },
+            {
+              "name": "Thunder Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Webbing",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Thunder Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Stamina Surge 2",
+            "Constitution 3"
+          ],
+          "insight": "Break the wind aura first; Thunder damage only starts stacking after the aura drops. Enter Demon Mode after a perfect dodge to keep element uptime."
+        },
+        {
+          "id": "thunder-bow",
+          "weaponType": "BOW",
+          "name": "Lightning Arc",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Bow at the Smithy after clearing the 6-star Thunder hunt. Upgrade path: Iron Bow -> Lightning Arc.",
+          "attack": 254,
+          "elementValue": 45,
+          "materials": [
+            {
+              "name": "Tobi-Kadachi Pelt",
+              "qty": 4
+            },
+            {
+              "name": "Thunder Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Webbing",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Thunder Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Stamina Surge 2",
+            "Bow Charge Plus"
+          ],
+          "insight": "Break the wind aura first; Thunder damage only starts stacking after the aura drops. Use Power Shot on the weakest part and keep coatings stocked."
+        },
+        {
+          "id": "thunder-gs",
+          "weaponType": "GREAT_SWORD",
+          "name": "Boltcleaver",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Great Sword at the Smithy after clearing the 6-star Thunder hunt. Upgrade path: Iron Great Sword -> Boltcleaver.",
+          "attack": 259,
+          "elementValue": 47,
+          "materials": [
+            {
+              "name": "Tobi-Kadachi Pelt",
+              "qty": 4
+            },
+            {
+              "name": "Thunder Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Webbing",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Thunder Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Stamina Surge 2",
+            "Focus 3"
+          ],
+          "insight": "Break the wind aura first; Thunder damage only starts stacking after the aura drops. Charge only on trapped or downed windows."
+        },
+        {
+          "id": "thunder-cb",
+          "weaponType": "CHARGE_BLADE",
+          "name": "Arc Aegis",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Charge Blade at the Smithy after clearing the 6-star Thunder hunt. Upgrade path: Iron Charge Blade -> Arc Aegis.",
+          "attack": 264,
+          "elementValue": 49,
+          "materials": [
+            {
+              "name": "Tobi-Kadachi Pelt",
+              "qty": 4
+            },
+            {
+              "name": "Thunder Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Webbing",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Thunder Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Stamina Surge 2",
+            "Guard 3"
+          ],
+          "insight": "Break the wind aura first; Thunder damage only starts stacking after the aura drops. SAED after a guard point and keep the shield charged."
+        },
+        {
+          "id": "thunder-hammer",
+          "weaponType": "HAMMER",
+          "name": "Skybreaker",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Hammer at the Smithy after clearing the 6-star Thunder hunt. Upgrade path: Iron Hammer -> Skybreaker.",
+          "attack": 269,
+          "elementValue": 45,
+          "materials": [
+            {
+              "name": "Tobi-Kadachi Pelt",
+              "qty": 4
+            },
+            {
+              "name": "Thunder Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Webbing",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Thunder Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Stamina Surge 2",
+            "Slugger 3"
+          ],
+          "insight": "Break the wind aura first; Thunder damage only starts stacking after the aura drops. Target the head; a stun is a free team window."
+        },
+        {
+          "id": "thunder-lance",
+          "weaponType": "LANCE",
+          "name": "Thunderwall",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Lance at the Smithy after clearing the 6-star Thunder hunt. Upgrade path: Iron Lance -> Thunderwall.",
+          "attack": 274,
+          "elementValue": 47,
+          "materials": [
+            {
+              "name": "Tobi-Kadachi Pelt",
+              "qty": 4
+            },
+            {
+              "name": "Thunder Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Webbing",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Thunder Attack 5",
+            "Weakness Exploit 3",
+            "Critical Boost 2",
+            "Stamina Surge 2",
+            "Guard 3"
+          ],
+          "insight": "Break the wind aura first; Thunder damage only starts stacking after the aura drops. Counter into a triple poke and stay glued to the weak point."
+        }
+      ]
+    },
+    {
+      "element": "ICE",
+      "summary": "Ice locks down Anjanath and Tobi-Kadachi. Ink of Frost plus Radiant Rathian converts precise head hits into huge critical element ticks.",
+      "visageSet": {
+        "name": "Ink of Frost",
+        "pieces": [
+          "Ink of Frost Helm",
+          "Ink of Frost Mail",
+          "Ink of Frost Vambraces",
+          "Ink of Frost Coil",
+          "Ink of Frost Greaves"
+        ],
+        "bonus": "Ice Attack +3 and Divine Blessing +1."
+      },
+      "coreVisages": [
+        {
+          "name": "Kushala Daora",
+          "effect": "Short wind-pressure immunity and faster stamina recovery."
+        },
+        {
+          "name": "Radiant Rathian",
+          "effect": "Critical Element +12% while at full health."
+        }
+      ],
+      "buddies": [
+        {
+          "name": "Ro",
+          "role": "Support",
+          "skill": "Tidal Ward - cleanses blights and heals nearby allies."
+        },
+        {
+          "name": "Pipa",
+          "role": "Support",
+          "skill": "Warm Canteen - heals and refreshes Well-Fed."
+        }
+      ],
+      "weapons": [
+        {
+          "id": "ice-hbg",
+          "weaponType": "HEAVY_BOWGUN",
+          "name": "Frostveil Cannon",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Assault at the Smithy after clearing the 6-star Ice hunt. Upgrade path: Iron Assault -> Frostveil Cannon.",
+          "attack": 239,
+          "elementValue": 40,
+          "materials": [
+            {
+              "name": "Legiana Hide",
+              "qty": 4
+            },
+            {
+              "name": "Frost Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Shell",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Ice Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Divine Blessing 2",
+            "Artillery 3"
+          ],
+          "insight": "Freeze the legs to trip the target, then move to the head before the ice window closes. Aim for the head from mid range and reload behind cover."
+        },
+        {
+          "id": "ice-ls",
+          "weaponType": "LONG_SWORD",
+          "name": "Glacier Edge",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Katana at the Smithy after clearing the 6-star Ice hunt. Upgrade path: Iron Katana -> Glacier Edge.",
+          "attack": 244,
+          "elementValue": 42,
+          "materials": [
+            {
+              "name": "Legiana Hide",
+              "qty": 4
+            },
+            {
+              "name": "Frost Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Shell",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Ice Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Divine Blessing 2",
+            "Quick Sheath 3"
+          ],
+          "insight": "Freeze the legs to trip the target, then move to the head before the ice window closes. Land Spirit Helm Breaker on a downed head."
+        },
+        {
+          "id": "ice-db",
+          "weaponType": "DUAL_BLADES",
+          "name": "Rime Claws",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Claws at the Smithy after clearing the 6-star Ice hunt. Upgrade path: Iron Claws -> Rime Claws.",
+          "attack": 249,
+          "elementValue": 44,
+          "materials": [
+            {
+              "name": "Legiana Hide",
+              "qty": 4
+            },
+            {
+              "name": "Frost Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Shell",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Ice Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Divine Blessing 2",
+            "Constitution 3"
+          ],
+          "insight": "Freeze the legs to trip the target, then move to the head before the ice window closes. Enter Demon Mode after a perfect dodge to keep element uptime."
+        },
+        {
+          "id": "ice-bow",
+          "weaponType": "BOW",
+          "name": "Hailstorm Arc",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Bow at the Smithy after clearing the 6-star Ice hunt. Upgrade path: Iron Bow -> Hailstorm Arc.",
+          "attack": 254,
+          "elementValue": 40,
+          "materials": [
+            {
+              "name": "Legiana Hide",
+              "qty": 4
+            },
+            {
+              "name": "Frost Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Shell",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Ice Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Divine Blessing 2",
+            "Bow Charge Plus"
+          ],
+          "insight": "Freeze the legs to trip the target, then move to the head before the ice window closes. Use Power Shot on the weakest part and keep coatings stocked."
+        },
+        {
+          "id": "ice-gs",
+          "weaponType": "GREAT_SWORD",
+          "name": "Permafrost Cleaver",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Great Sword at the Smithy after clearing the 6-star Ice hunt. Upgrade path: Iron Great Sword -> Permafrost Cleaver.",
+          "attack": 259,
+          "elementValue": 42,
+          "materials": [
+            {
+              "name": "Legiana Hide",
+              "qty": 4
+            },
+            {
+              "name": "Frost Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Shell",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Ice Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Divine Blessing 2",
+            "Focus 3"
+          ],
+          "insight": "Freeze the legs to trip the target, then move to the head before the ice window closes. Charge only on trapped or downed windows."
+        },
+        {
+          "id": "ice-cb",
+          "weaponType": "CHARGE_BLADE",
+          "name": "Frost Aegis",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Charge Blade at the Smithy after clearing the 6-star Ice hunt. Upgrade path: Iron Charge Blade -> Frost Aegis.",
+          "attack": 264,
+          "elementValue": 44,
+          "materials": [
+            {
+              "name": "Legiana Hide",
+              "qty": 4
+            },
+            {
+              "name": "Frost Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Shell",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Ice Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Divine Blessing 2",
+            "Guard 3"
+          ],
+          "insight": "Freeze the legs to trip the target, then move to the head before the ice window closes. SAED after a guard point and keep the shield charged."
+        },
+        {
+          "id": "ice-hammer",
+          "weaponType": "HAMMER",
+          "name": "Icefall Maul",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Hammer at the Smithy after clearing the 6-star Ice hunt. Upgrade path: Iron Hammer -> Icefall Maul.",
+          "attack": 269,
+          "elementValue": 40,
+          "materials": [
+            {
+              "name": "Legiana Hide",
+              "qty": 4
+            },
+            {
+              "name": "Frost Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Shell",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Ice Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Divine Blessing 2",
+            "Slugger 3"
+          ],
+          "insight": "Freeze the legs to trip the target, then move to the head before the ice window closes. Target the head; a stun is a free team window."
+        },
+        {
+          "id": "ice-lance",
+          "weaponType": "LANCE",
+          "name": "Coldspine Guard",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Lance at the Smithy after clearing the 6-star Ice hunt. Upgrade path: Iron Lance -> Coldspine Guard.",
+          "attack": 274,
+          "elementValue": 42,
+          "materials": [
+            {
+              "name": "Legiana Hide",
+              "qty": 4
+            },
+            {
+              "name": "Frost Sac",
+              "qty": 2
+            },
+            {
+              "name": "Kushala Shell",
+              "qty": 1
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Ice Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Divine Blessing 2",
+            "Guard 3"
+          ],
+          "insight": "Freeze the legs to trip the target, then move to the head before the ice window closes. Counter into a triple poke and stay glued to the weak point."
+        }
+      ]
+    },
+    {
+      "element": "DRAGON",
+      "summary": "Dragon is the elder-killer. Ink of Wyrms with Radiant Rathian rewards clean play and melts Kushala Daora's aura.",
+      "visageSet": {
+        "name": "Ink of Wyrms",
+        "pieces": [
+          "Ink of Wyrms Helm",
+          "Ink of Wyrms Mail",
+          "Ink of Wyrms Vambraces",
+          "Ink of Wyrms Coil",
+          "Ink of Wyrms Greaves"
+        ],
+        "bonus": "Dragon Attack +3 and Peak Performance +1."
+      },
+      "coreVisages": [
+        {
+          "name": "Radiant Rathian",
+          "effect": "Critical Element +12% while at full health."
+        },
+        {
+          "name": "Kushala Daora",
+          "effect": "Short wind-pressure immunity and faster stamina recovery."
+        }
+      ],
+      "buddies": [
+        {
+          "name": "Daisho",
+          "role": "Assault",
+          "skill": "Storm Fang - rapid tandem with Dragon buildup."
+        },
+        {
+          "name": "Kojiro",
+          "role": "Support",
+          "skill": "Ember Ward - cleanses and grants a short attack buff."
+        }
+      ],
+      "weapons": [
+        {
+          "id": "dragon-hbg",
+          "weaponType": "HEAVY_BOWGUN",
+          "name": "Elderbane Cannon",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Assault at the Smithy after clearing the 7-star Elder hunt. Upgrade path: Iron Assault -> Elderbane Cannon.",
+          "attack": 239,
+          "elementValue": 48,
+          "materials": [
+            {
+              "name": "Kushala Shell",
+              "qty": 3
+            },
+            {
+              "name": "Rathian Spike+",
+              "qty": 2
+            },
+            {
+              "name": "Elder Dragon Bone",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Dragon Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Peak Performance 2",
+            "Artillery 3"
+          ],
+          "insight": "Save your biggest Dragon combo for elder aura breaks; that is where the damage multiplier lives. Aim for the head from mid range and reload behind cover."
+        },
+        {
+          "id": "dragon-ls",
+          "weaponType": "LONG_SWORD",
+          "name": "Wyvern Fang",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Katana at the Smithy after clearing the 7-star Elder hunt. Upgrade path: Iron Katana -> Wyvern Fang.",
+          "attack": 244,
+          "elementValue": 50,
+          "materials": [
+            {
+              "name": "Kushala Shell",
+              "qty": 3
+            },
+            {
+              "name": "Rathian Spike+",
+              "qty": 2
+            },
+            {
+              "name": "Elder Dragon Bone",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Dragon Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Peak Performance 2",
+            "Quick Sheath 3"
+          ],
+          "insight": "Save your biggest Dragon combo for elder aura breaks; that is where the damage multiplier lives. Land Spirit Helm Breaker on a downed head."
+        },
+        {
+          "id": "dragon-db",
+          "weaponType": "DUAL_BLADES",
+          "name": "Drake Claws",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Claws at the Smithy after clearing the 7-star Elder hunt. Upgrade path: Iron Claws -> Drake Claws.",
+          "attack": 249,
+          "elementValue": 52,
+          "materials": [
+            {
+              "name": "Kushala Shell",
+              "qty": 3
+            },
+            {
+              "name": "Rathian Spike+",
+              "qty": 2
+            },
+            {
+              "name": "Elder Dragon Bone",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Dragon Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Peak Performance 2",
+            "Constitution 3"
+          ],
+          "insight": "Save your biggest Dragon combo for elder aura breaks; that is where the damage multiplier lives. Enter Demon Mode after a perfect dodge to keep element uptime."
+        },
+        {
+          "id": "dragon-bow",
+          "weaponType": "BOW",
+          "name": "Dragon Arc",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Bow at the Smithy after clearing the 7-star Elder hunt. Upgrade path: Iron Bow -> Dragon Arc.",
+          "attack": 254,
+          "elementValue": 48,
+          "materials": [
+            {
+              "name": "Kushala Shell",
+              "qty": 3
+            },
+            {
+              "name": "Rathian Spike+",
+              "qty": 2
+            },
+            {
+              "name": "Elder Dragon Bone",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Dragon Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Peak Performance 2",
+            "Bow Charge Plus"
+          ],
+          "insight": "Save your biggest Dragon combo for elder aura breaks; that is where the damage multiplier lives. Use Power Shot on the weakest part and keep coatings stocked."
+        },
+        {
+          "id": "dragon-gs",
+          "weaponType": "GREAT_SWORD",
+          "name": "Doomblade",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Great Sword at the Smithy after clearing the 7-star Elder hunt. Upgrade path: Iron Great Sword -> Doomblade.",
+          "attack": 259,
+          "elementValue": 50,
+          "materials": [
+            {
+              "name": "Kushala Shell",
+              "qty": 3
+            },
+            {
+              "name": "Rathian Spike+",
+              "qty": 2
+            },
+            {
+              "name": "Elder Dragon Bone",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Dragon Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Peak Performance 2",
+            "Focus 3"
+          ],
+          "insight": "Save your biggest Dragon combo for elder aura breaks; that is where the damage multiplier lives. Charge only on trapped or downed windows."
+        },
+        {
+          "id": "dragon-cb",
+          "weaponType": "CHARGE_BLADE",
+          "name": "Elder Aegis",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Charge Blade at the Smithy after clearing the 7-star Elder hunt. Upgrade path: Iron Charge Blade -> Elder Aegis.",
+          "attack": 264,
+          "elementValue": 52,
+          "materials": [
+            {
+              "name": "Kushala Shell",
+              "qty": 3
+            },
+            {
+              "name": "Rathian Spike+",
+              "qty": 2
+            },
+            {
+              "name": "Elder Dragon Bone",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Dragon Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Peak Performance 2",
+            "Guard 3"
+          ],
+          "insight": "Save your biggest Dragon combo for elder aura breaks; that is where the damage multiplier lives. SAED after a guard point and keep the shield charged."
+        },
+        {
+          "id": "dragon-hammer",
+          "weaponType": "HAMMER",
+          "name": "Elderbreaker",
+          "tier": "Apex",
+          "forgePath": "Forge from Iron Hammer at the Smithy after clearing the 7-star Elder hunt. Upgrade path: Iron Hammer -> Elderbreaker.",
+          "attack": 269,
+          "elementValue": 48,
+          "materials": [
+            {
+              "name": "Kushala Shell",
+              "qty": 3
+            },
+            {
+              "name": "Rathian Spike+",
+              "qty": 2
+            },
+            {
+              "name": "Elder Dragon Bone",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Dragon Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Peak Performance 2",
+            "Slugger 3"
+          ],
+          "insight": "Save your biggest Dragon combo for elder aura breaks; that is where the damage multiplier lives. Target the head; a stun is a free team window."
+        },
+        {
+          "id": "dragon-lance",
+          "weaponType": "LANCE",
+          "name": "Wyrmwall",
+          "tier": "Forge",
+          "forgePath": "Forge from Iron Lance at the Smithy after clearing the 7-star Elder hunt. Upgrade path: Iron Lance -> Wyrmwall.",
+          "attack": 274,
+          "elementValue": 50,
+          "materials": [
+            {
+              "name": "Kushala Shell",
+              "qty": 3
+            },
+            {
+              "name": "Rathian Spike+",
+              "qty": 2
+            },
+            {
+              "name": "Elder Dragon Bone",
+              "qty": 2
+            },
+            {
+              "name": "Apex Bone",
+              "qty": 2
+            }
+          ],
+          "armorSkills": [
+            "Dragon Attack 5",
+            "Weakness Exploit 3",
+            "Critical Element 2",
+            "Peak Performance 2",
+            "Guard 3"
+          ],
+          "insight": "Save your biggest Dragon combo for elder aura breaks; that is where the damage multiplier lives. Counter into a triple poke and stay glued to the weak point."
+        }
+      ]
+    }
+  ]
+}

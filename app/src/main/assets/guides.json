@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-23",
+  "sections": [
+    {
+      "id": "pre-hunt",
+      "title": "Pre-Hunt Checklist",
+      "subtitle": "Two minutes here saves ten minutes of carting.",
+      "items": [
+        {
+          "heading": "Canteen first",
+          "body": "Eat for Well-Fed plus an element attack buff. Food buffs persist until you cart."
+        },
+        {
+          "heading": "Element check",
+          "body": "Match the primary weakness from the Bestiary. Secondary is fine only if your raw is much higher."
+        },
+        {
+          "heading": "Trap kit",
+          "body": "Carry 1 Pitfall and 1 Shock Trap plus 2 Tranq Bombs for captures."
+        },
+        {
+          "heading": "Healing",
+          "body": "10 Mega Potions, 3 First Aid Med+, and 1 Lifepowder for the team."
+        },
+        {
+          "heading": "Ammo and coatings",
+          "body": "Restock bowgun ammo and coatings. Elemental ammo disappears fast."
+        },
+        {
+          "heading": "Buddy check",
+          "body": "Assign a Support buddy with heal or cleanse before a long hunt."
+        }
+      ]
+    },
+    {
+      "id": "capture-vs-slay",
+      "title": "Capture vs Slay",
+      "subtitle": "Know the difference before the monster limps away.",
+      "items": [
+        {
+          "heading": "When to capture",
+          "body": "Capture at 20% HP or less. Limping, sleeping, or a skull icon means it is ready."
+        },
+        {
+          "heading": "Trap order",
+          "body": "Place a trap on the monster's path, wait for the snare, then use 2 Tranq Bombs."
+        },
+        {
+          "heading": "Rewards",
+          "body": "Captures give more materials per run; slaying gives carves plus head and tail breaks."
+        },
+        {
+          "heading": "Elder Dragons",
+          "body": "Kushala Daora and other elders cannot be trapped. Slay them."
+        }
+      ]
+    },
+    {
+      "id": "waypoints",
+      "title": "Waypoint Exploration",
+      "subtitle": "Fast travel is free; walking is not.",
+      "items": [
+        {
+          "heading": "Unlock first",
+          "body": "Activate every waypoint you pass. Fast travel costs nothing and saves minutes."
+        },
+        {
+          "heading": "Resource loop",
+          "body": "Gather honey and herbs on the way to the target; you never have enough potions."
+        },
+        {
+          "heading": "Hidden paths",
+          "body": "Climbable ledges are marked with white paint. Use them to skip the main trail."
+        }
+      ]
+    },
+    {
+      "id": "environmental-traps",
+      "title": "Environmental Traps",
+      "subtitle": "Free damage windows are everywhere.",
+      "items": [
+        {
+          "heading": "Boulder",
+          "body": "Drop a boulder when the monster roars under a cliff for a free knockdown."
+        },
+        {
+          "heading": "Paratoad",
+          "body": "Kick a Paratoad near the target to paralyze it for a long damage window."
+        },
+        {
+          "heading": "Flashfly",
+          "body": "Flashflies blind flying monsters. Use them before a Rathalos dive."
+        },
+        {
+          "heading": "Vine snare",
+          "body": "Vine snares hold ground monsters for 4-5 seconds."
+        }
+      ]
+    },
+    {
+      "id": "field-crafting",
+      "title": "Field Crafting",
+      "subtitle": "Never walk back to camp for a potion again.",
+      "items": [
+        {
+          "heading": "Mega Potion",
+          "body": "Potion + Honey. Craft in the field when your bag runs dry."
+        },
+        {
+          "heading": "Max Potion",
+          "body": "Mega Potion + Mandragora. Full heal and max HP refill."
+        },
+        {
+          "heading": "Antidote",
+          "body": "Antidote Herb + Blue Mushroom for poison."
+        },
+        {
+          "heading": "Energy Drink",
+          "body": "Nitroshroom + Honey restores stamina."
+        },
+        {
+          "heading": "Nulberry",
+          "body": "Carry Nulberries to cleanse Fireblight and Iceblight."
+        }
+      ]
+    },
+    {
+      "id": "team-roles",
+      "title": "Team Roles",
+      "subtitle": "One of each is stronger than three of the same.",
+      "items": [
+        {
+          "heading": "Assault",
+          "body": "Burst the weak point and keep element pressure up."
+        },
+        {
+          "heading": "Disruptor",
+          "body": "Chain traps, mounts, and status to create openings."
+        },
+        {
+          "heading": "Support",
+          "body": "Heal, cleanse, and buff. A dead support is worse than no support."
+        },
+        {
+          "heading": "Synergy",
+          "body": "Aim for 1 Assault + 1 Disruptor + 1 Support sharing the monster's primary element."
+        }
+      ]
+    }
+  ],
+  "ailments": [
+    {
+      "id": "poison",
+      "name": "Poison",
+      "severity": "High",
+      "effect": "HP drains over time and interrupts healing.",
+      "cures": [
+        "Antidote",
+        "Herbal Medicine"
+      ],
+      "tip": "Herbal Medicine also heals a little."
+    },
+    {
+      "id": "paralysis",
+      "name": "Paralysis",
+      "severity": "High",
+      "effect": "You cannot move or attack; the monster gets a free hit.",
+      "cures": [
+        "Paralysis Needle",
+        "Energy Drink"
+      ],
+      "tip": "Mash inputs to shorten the stun."
+    },
+    {
+      "id": "sleep",
+      "name": "Sleep",
+      "severity": "Medium",
+      "effect": "You fall asleep; the next hit deals heavy damage.",
+      "cures": [
+        "Awakening"
+      ],
+      "tip": "Never sleep next to a charging monster."
+    },
+    {
+      "id": "blastblight",
+      "name": "Blastblight",
+      "severity": "High",
+      "effect": "Explodes after a short delay or when hit.",
+      "cures": [
+        "Deodorant",
+        "Nulberry"
+      ],
+      "tip": "Stop attacking and roll three times."
+    },
+    {
+      "id": "defense-down",
+      "name": "Defense Down",
+      "severity": "Medium",
+      "effect": "Defense drops sharply; heavy hits can cart you.",
+      "cures": [
+        "Armorskin",
+        "Armor Seed"
+      ],
+      "tip": "Refresh defense before the next big opening."
+    },
+    {
+      "id": "fireblight",
+      "name": "Fireblight",
+      "severity": "Medium",
+      "effect": "Burn damage over time; rolling removes it.",
+      "cures": [
+        "Nulberry",
+        "Deodorant"
+      ],
+      "tip": "Roll three times to put out the fire."
+    },
+    {
+      "id": "iceblight",
+      "name": "Iceblight",
+      "severity": "Medium",
+      "effect": "Stamina recovery slows drastically.",
+      "cures": [
+        "Nulberry",
+        "Energy Drink"
+      ],
+      "tip": "Do not start a long combo while iceblighted."
+    },
+    {
+      "id": "stun",
+      "name": "Stun",
+      "severity": "High",
+      "effect": "Stars circle your head and the next combo is free for the monster.",
+      "cures": [
+        "Wiggle Stick"
+      ],
+      "tip": "Mash and move; a teammate can also hit you out of it."
+    }
+  ],
+  "emergencyRecipes": [
+    {
+      "name": "Mega Potion",
+      "ingredients": [
+        "Potion x1",
+        "Honey x1"
+      ],
+      "effect": "Restores 70 HP."
+    },
+    {
+      "name": "Max Potion",
+      "ingredients": [
+        "Mega Potion x1",
+        "Mandragora x1"
+      ],
+      "effect": "Full heal plus max HP refill."
+    },
+    {
+      "name": "Herbal Medicine",
+      "ingredients": [
+        "Antidote Herb x1",
+        "Blue Mushroom x1"
+      ],
+      "effect": "Cures poison and heals."
+    },
+    {
+      "name": "Energy Drink",
+      "ingredients": [
+        "Nitroshroom x1",
+        "Honey x1"
+      ],
+      "effect": "Stamina refill and paralysis recovery."
+    },
+    {
+      "name": "Armorskin",
+      "ingredients": [
+        "Armor Seed x1",
+        "Bitterbug x1"
+      ],
+      "effect": "Raises defense for the hunt."
+    },
+    {
+      "name": "Demon Drug",
+      "ingredients": [
+        "Might Seed x1",
+        "Bitterbug x1"
+      ],
+      "effect": "Raises attack for the hunt."
+    }
+  ]
+}

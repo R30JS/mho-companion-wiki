@@ -1,0 +1,272 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-23",
+  "characters": [
+    {
+      "id": "midori",
+      "name": "Midori",
+      "role": "ASSAULT",
+      "element": "WATER",
+      "weaponType": "LONG_SWORD",
+      "weaponName": "Ripple Edge",
+      "rating": 5,
+      "summary": "Balanced Water duelist and the safest pick for learning Long Sword counters.",
+      "rotation": [
+        "Open with Foresight Slash to build Spirit gauge.",
+        "Red Spirit into Helm Breaker on the head.",
+        "Refresh Water pressure before the second phase."
+      ],
+      "tips": [
+        "Counter through roars instead of dodging.",
+        "Pairs well with Pipa's heal uptime."
+      ]
+    },
+    {
+      "id": "luka",
+      "name": "Luka",
+      "role": "ASSAULT",
+      "element": "FIRE",
+      "weaponType": "DUAL_BLADES",
+      "weaponName": "Cinder Claws",
+      "rating": 4,
+      "summary": "Aggressive Fire blade dancer built for short, brutal openings.",
+      "rotation": [
+        "Start in Demon Mode after a mount.",
+        "Blade Dance the head, then disengage before the roar.",
+        "Keep stamina for one emergency dodge."
+      ],
+      "tips": [
+        "Do not overcommit on a limping target.",
+        "Bring Constitution food for long fights."
+      ]
+    },
+    {
+      "id": "pyro",
+      "name": "Pyro",
+      "role": "DISRUPTOR",
+      "element": "FIRE",
+      "weaponType": "CHARGE_BLADE",
+      "weaponName": "Magma Aegis",
+      "rating": 4,
+      "summary": "Guard-point specialist who converts monster aggression into Fire bursts.",
+      "rotation": [
+        "Bait the first charge and guard point it.",
+        "Charge the shield before spending phials.",
+        "SAED on the head after a trip."
+      ],
+      "tips": [
+        "Guard points beat panic rolls.",
+        "Works best with a Support that cleanses Fireblight."
+      ]
+    },
+    {
+      "id": "rhodes",
+      "name": "Rhodes",
+      "role": "SUPPORT",
+      "element": "THUNDER",
+      "weaponType": "LANCE",
+      "weaponName": "Thunderwall",
+      "rating": 4,
+      "summary": "Immovable Thunder wall that holds the line and feeds the team openings.",
+      "rotation": [
+        "Open with a counter to establish aggro.",
+        "Triple poke the legs to build trips.",
+        "Save a wide sweep for adds."
+      ],
+      "tips": [
+        "Your job is space, not damage.",
+        "Guard Dash through beams to save stamina."
+      ]
+    },
+    {
+      "id": "ryunosuke",
+      "name": "Ryunosuke",
+      "role": "ASSAULT",
+      "element": "THUNDER",
+      "weaponType": "GREAT_SWORD",
+      "weaponName": "Boltcleaver",
+      "rating": 5,
+      "summary": "Patient Thunder executioner with the highest single-hit ceiling in the roster.",
+      "rotation": [
+        "Wait for a trap or roar to start the charge.",
+        "True Charged Slash the head, then sheath.",
+        "Use Tackle to armor through the tail sweep."
+      ],
+      "tips": [
+        "A whiffed TCS costs more than a skipped one.",
+        "Pair with a Hammer for stun windows."
+      ]
+    },
+    {
+      "id": "keres",
+      "name": "Keres",
+      "role": "DISRUPTOR",
+      "element": "DRAGON",
+      "weaponType": "BOW",
+      "weaponName": "Dragon Arc",
+      "rating": 4,
+      "summary": "Dragon bow controller who keeps elders grounded and auras broken.",
+      "rotation": [
+        "Open with a Dragon shot to the head.",
+        "Use Arc Shot to pressure the legs.",
+        "Reposition during the aura break."
+      ],
+      "tips": [
+        "Keep stamina for one Power Shot burst.",
+        "Target the head only after the aura drops."
+      ]
+    },
+    {
+      "id": "freya",
+      "name": "Freya",
+      "role": "SUPPORT",
+      "element": "ICE",
+      "weaponType": "HEAVY_BOWGUN",
+      "weaponName": "Frostveil Cannon",
+      "rating": 4,
+      "summary": "Ranged Ice support with reliable para and heal ammo.",
+      "rotation": [
+        "Load Para ammo for the first opening.",
+        "Ice the legs to trip the target.",
+        "Switch to heal ammo when an ally is low."
+      ],
+      "tips": [
+        "Craft ammo before every hunt.",
+        "Stay behind the melee line when reloading."
+      ]
+    },
+    {
+      "id": "luxheart",
+      "name": "Luxheart",
+      "role": "SUPPORT",
+      "element": "FIRE",
+      "weaponType": "HAMMER",
+      "weaponName": "Forgefall Maul",
+      "rating": 4,
+      "summary": "Stun-focused Fire support who opens the head for the whole team.",
+      "rotation": [
+        "Upswing the head to build stun.",
+        "Big Bang after the first KO.",
+        "Reset to the head after every roar."
+      ],
+      "tips": [
+        "Do not chase a flying monster.",
+        "A stun is worth more than raw damage."
+      ]
+    },
+    {
+      "id": "raya",
+      "name": "Raya",
+      "role": "ASSAULT",
+      "element": "ICE",
+      "weaponType": "BOW",
+      "weaponName": "Hailstorm Arc",
+      "rating": 5,
+      "summary": "Mobile Ice archer who punishes long recoveries from range.",
+      "rotation": [
+        "Coat Ice and aim for the head.",
+        "Power Shot after a perfect dodge.",
+        "Use the terrain to keep height."
+      ],
+      "tips": [
+        "Keep one dash of stamina in reserve.",
+        "Iceblight resistance food helps a lot."
+      ]
+    },
+    {
+      "id": "pepper",
+      "name": "Pepper",
+      "role": "DISRUPTOR",
+      "element": "WATER",
+      "weaponType": "DUAL_BLADES",
+      "weaponName": "Torrent Claws",
+      "rating": 4,
+      "summary": "Water status skirmisher who stacks paralysis between Water bursts.",
+      "rotation": [
+        "Apply Para coating on the first opening.",
+        "Blade Dance the head while the team commits.",
+        "Disengage and reapply before the second phase."
+      ],
+      "tips": [
+        "Never trade hits for status buildup.",
+        "Bring Energy Drinks for paralysis recovery."
+      ]
+    },
+    {
+      "id": "madelyn",
+      "name": "Madelyn",
+      "role": "SUPPORT",
+      "element": "WATER",
+      "weaponType": "HEAVY_BOWGUN",
+      "weaponName": "Tidebreaker Cannon",
+      "rating": 5,
+      "summary": "The roster's best sustain support: Water pressure plus cleanse and heal ammo.",
+      "rotation": [
+        "Open with Water ammo to soften the hide.",
+        "Keep cleanse ammo ready for blights.",
+        "Heal before the team's big window, not after."
+      ],
+      "tips": [
+        "Position so both allies stay in heal range.",
+        "Reload during monster roars."
+      ]
+    },
+    {
+      "id": "arkaya",
+      "name": "Arkaya",
+      "role": "DISRUPTOR",
+      "element": "DRAGON",
+      "weaponType": "LONG_SWORD",
+      "weaponName": "Wyvern Fang",
+      "rating": 4,
+      "summary": "Dragon counter duelist who turns elder aggression into Spirit gauge.",
+      "rotation": [
+        "Foresight Slash the first swipe.",
+        "Helm Breaker the head on the counter window.",
+        "Keep Dragon pressure on the aura."
+      ],
+      "tips": [
+        "Counter timing matters more than combo length.",
+        "Avoid countering multi-hit beams."
+      ]
+    },
+    {
+      "id": "haze",
+      "name": "Haze",
+      "role": "ASSAULT",
+      "element": "DRAGON",
+      "weaponType": "DUAL_BLADES",
+      "weaponName": "Drake Claws",
+      "rating": 5,
+      "summary": "Glass-cannon Dragon blade dancer with the fastest elder kill times.",
+      "rotation": [
+        "Demon Mode immediately after a mount.",
+        "Focus the head, then the forelegs.",
+        "Leave one dodge of stamina for the roar."
+      ],
+      "tips": [
+        "Bring Divine Blessing food.",
+        "Do not start a dance without a down."
+      ]
+    },
+    {
+      "id": "ouyang-varen",
+      "name": "Ouyang Varen",
+      "role": "SUPPORT",
+      "element": "THUNDER",
+      "weaponType": "HAMMER",
+      "weaponName": "Skybreaker",
+      "rating": 4,
+      "summary": "Veteran Thunder support who mixes KO pressure with team buffs.",
+      "rotation": [
+        "Open with an upswing to the head.",
+        "KO, then apply the team attack buff.",
+        "Return to the head after every heal."
+      ],
+      "tips": [
+        "Buff before the damage window, not during it.",
+        "Keep the Hammer charged while repositioning."
+      ]
+    }
+  ]
+}

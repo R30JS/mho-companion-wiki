@@ -1,0 +1,545 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-23",
+  "monsters": [
+    {
+      "id": "rathalos",
+      "name": "Rathalos",
+      "title": "King of the Skies",
+      "threat": 9,
+      "weakness": {
+        "primary": "WATER",
+        "secondary": "THUNDER"
+      },
+      "habitat": "Ancient Forest / Volcano",
+      "ailments": [
+        "FIREBLIGHT",
+        "POISON"
+      ],
+      "hitzones": [
+        {
+          "part": "Head",
+          "sever": 3,
+          "blunt": 3,
+          "ranged": 3,
+          "note": "Primary weak point after a flash."
+        },
+        {
+          "part": "Wings",
+          "sever": 2,
+          "blunt": 1,
+          "ranged": 2,
+          "note": "Break to slow aerial combos."
+        },
+        {
+          "part": "Tail",
+          "sever": 3,
+          "blunt": 1,
+          "ranged": 1,
+          "note": "Sever for a carve and shorter sweeps."
+        },
+        {
+          "part": "Legs",
+          "sever": 1,
+          "blunt": 2,
+          "ranged": 1,
+          "note": "Blunt damage trips it."
+        }
+      ],
+      "strategy": [
+        "Flash Pods knock it out of the sky for a long damage window.",
+        "Never stand under a hovering Rathalos; the talon dive tracks twice.",
+        "Cut the tail early to remove the poison sweep."
+      ],
+      "materials": [
+        {
+          "name": "Rathalos Scale",
+          "rarity": 4,
+          "source": "Body carve / quest reward"
+        },
+        {
+          "name": "Rathalos Wing",
+          "rarity": 4,
+          "source": "Wing break"
+        },
+        {
+          "name": "Rathalos Plate",
+          "rarity": 5,
+          "source": "Rare carve / head break"
+        },
+        {
+          "name": "Flame Sac",
+          "rarity": 3,
+          "source": "Body carve"
+        },
+        {
+          "name": "Rathalos Ruby",
+          "rarity": 6,
+          "source": "Rare carve / capture"
+        }
+      ]
+    },
+    {
+      "id": "rathian",
+      "name": "Rathian",
+      "title": "Queen of the Land",
+      "threat": 7,
+      "weakness": {
+        "primary": "WATER",
+        "secondary": "THUNDER"
+      },
+      "habitat": "Ancient Forest / Wildspire Waste",
+      "ailments": [
+        "POISON",
+        "FIREBLIGHT"
+      ],
+      "hitzones": [
+        {
+          "part": "Head",
+          "sever": 3,
+          "blunt": 2,
+          "ranged": 2,
+          "note": "Safe after the triple fireball."
+        },
+        {
+          "part": "Wings",
+          "sever": 2,
+          "blunt": 1,
+          "ranged": 1,
+          "note": "Break to reduce the flip range."
+        },
+        {
+          "part": "Tail",
+          "sever": 3,
+          "blunt": 1,
+          "ranged": 2,
+          "note": "Sever to stop the backflip poison."
+        },
+        {
+          "part": "Legs",
+          "sever": 1,
+          "blunt": 2,
+          "ranged": 1,
+          "note": "Trip with blunt damage."
+        }
+      ],
+      "strategy": [
+        "The backflip is the poison tell: roll sideways, never backward.",
+        "Cut the tail to remove the poison backflip entirely.",
+        "Antidote or Herbal Medicine before chasing a limping Rathian."
+      ],
+      "materials": [
+        {
+          "name": "Rathian Scale",
+          "rarity": 4,
+          "source": "Body carve"
+        },
+        {
+          "name": "Rathian Spike+",
+          "rarity": 5,
+          "source": "Tail carve"
+        },
+        {
+          "name": "Rathian Plate",
+          "rarity": 5,
+          "source": "Head break / capture"
+        },
+        {
+          "name": "Poison Sac",
+          "rarity": 3,
+          "source": "Body carve"
+        },
+        {
+          "name": "Rathian Ruby",
+          "rarity": 6,
+          "source": "Rare carve"
+        }
+      ]
+    },
+    {
+      "id": "kushala-daora",
+      "name": "Kushala Daora",
+      "title": "Steel Wind Dragon",
+      "threat": 9,
+      "weakness": {
+        "primary": "THUNDER",
+        "secondary": "DRAGON"
+      },
+      "habitat": "Frost Islands / Elder Recess",
+      "ailments": [
+        "STUN",
+        "WIND PRESSURE"
+      ],
+      "hitzones": [
+        {
+          "part": "Head",
+          "sever": 3,
+          "blunt": 2,
+          "ranged": 2,
+          "note": "Break the horn to weaken the aura."
+        },
+        {
+          "part": "Wings",
+          "sever": 3,
+          "blunt": 1,
+          "ranged": 2,
+          "note": "Break to reduce tornado coverage."
+        },
+        {
+          "part": "Tail",
+          "sever": 2,
+          "blunt": 1,
+          "ranged": 1,
+          "note": "Sever for a carve."
+        },
+        {
+          "part": "Legs",
+          "sever": 1,
+          "blunt": 2,
+          "ranged": 1,
+          "note": "Trip it out of the air."
+        }
+      ],
+      "strategy": [
+        "Thunder and Dragon damage break the wind aura fastest.",
+        "Fight close to the body; tornadoes spawn at mid range.",
+        "Elder Dragons cannot be captured. Slay it."
+      ],
+      "materials": [
+        {
+          "name": "Kushala Shell",
+          "rarity": 5,
+          "source": "Body carve"
+        },
+        {
+          "name": "Kushala Webbing",
+          "rarity": 5,
+          "source": "Wing break"
+        },
+        {
+          "name": "Kushala Horn",
+          "rarity": 6,
+          "source": "Horn break"
+        },
+        {
+          "name": "Daora Gem",
+          "rarity": 7,
+          "source": "Rare carve / capture"
+        },
+        {
+          "name": "Elder Dragon Bone",
+          "rarity": 6,
+          "source": "Elder quest reward"
+        }
+      ]
+    },
+    {
+      "id": "anjanath",
+      "name": "Anjanath",
+      "title": "Fanged Wyvern",
+      "threat": 7,
+      "weakness": {
+        "primary": "WATER",
+        "secondary": "ICE"
+      },
+      "habitat": "Ancient Forest",
+      "ailments": [
+        "FIREBLIGHT",
+        "STUN"
+      ],
+      "hitzones": [
+        {
+          "part": "Head",
+          "sever": 3,
+          "blunt": 3,
+          "ranged": 2,
+          "note": "Nose break staggers the fire breath."
+        },
+        {
+          "part": "Legs",
+          "sever": 2,
+          "blunt": 2,
+          "ranged": 1,
+          "note": "Trip with Water or blunt pressure."
+        },
+        {
+          "part": "Tail",
+          "sever": 3,
+          "blunt": 1,
+          "ranged": 1,
+          "note": "Sever for a tail carve."
+        },
+        {
+          "part": "Back",
+          "sever": 1,
+          "blunt": 1,
+          "ranged": 1,
+          "note": "Hard to reach; ranged only."
+        }
+      ],
+      "strategy": [
+        "Water weapons extinguish the throat flame faster.",
+        "Roll through the charge, not away from it.",
+        "Punish the fire-breath recovery with a head combo."
+      ],
+      "materials": [
+        {
+          "name": "Anjanath Pelt",
+          "rarity": 3,
+          "source": "Body carve"
+        },
+        {
+          "name": "Anjanath Fang",
+          "rarity": 4,
+          "source": "Head break"
+        },
+        {
+          "name": "Anjanath Nosebone",
+          "rarity": 5,
+          "source": "Nose break"
+        },
+        {
+          "name": "Flame Sac",
+          "rarity": 3,
+          "source": "Body carve"
+        },
+        {
+          "name": "Anjanath Gem",
+          "rarity": 6,
+          "source": "Rare carve / capture"
+        }
+      ]
+    },
+    {
+      "id": "barroth",
+      "name": "Barroth",
+      "title": "Mud Wyvern",
+      "threat": 6,
+      "weakness": {
+        "primary": "WATER",
+        "secondary": "ICE"
+      },
+      "habitat": "Wildspire Waste",
+      "ailments": [
+        "MUD ARMOR",
+        "STUN"
+      ],
+      "hitzones": [
+        {
+          "part": "Head",
+          "sever": 2,
+          "blunt": 3,
+          "ranged": 2,
+          "note": "Blunt head hits cause easy KOs."
+        },
+        {
+          "part": "Forelegs",
+          "sever": 2,
+          "blunt": 2,
+          "ranged": 1,
+          "note": "Trip it out of the charge."
+        },
+        {
+          "part": "Tail",
+          "sever": 3,
+          "blunt": 2,
+          "ranged": 2,
+          "note": "Best sever target after the mud is off."
+        },
+        {
+          "part": "Back",
+          "sever": 1,
+          "blunt": 1,
+          "ranged": 1,
+          "note": "Coated in mud until washed."
+        }
+      ],
+      "strategy": [
+        "Water washes off the mud armor and exposes softer hide.",
+        "Stand to the side of the charge; it tracks poorly.",
+        "Bring a Hammer if you want a stun-heavy hunt."
+      ],
+      "materials": [
+        {
+          "name": "Barroth Ridge",
+          "rarity": 3,
+          "source": "Body carve"
+        },
+        {
+          "name": "Barroth Scalp",
+          "rarity": 5,
+          "source": "Head break"
+        },
+        {
+          "name": "Barroth Tail",
+          "rarity": 4,
+          "source": "Tail carve"
+        },
+        {
+          "name": "Muddy Shell",
+          "rarity": 3,
+          "source": "Body carve"
+        },
+        {
+          "name": "Wyvern Gem",
+          "rarity": 6,
+          "source": "Rare carve / capture"
+        }
+      ]
+    },
+    {
+      "id": "tobi-kadachi",
+      "name": "Tobi-Kadachi",
+      "title": "Thunderous Fanged Wyvern",
+      "threat": 6,
+      "weakness": {
+        "primary": "WATER",
+        "secondary": "ICE"
+      },
+      "habitat": "Ancient Forest",
+      "ailments": [
+        "PARALYSIS",
+        "STUN"
+      ],
+      "hitzones": [
+        {
+          "part": "Head",
+          "sever": 3,
+          "blunt": 2,
+          "ranged": 2,
+          "note": "Safe during the wall-run landing."
+        },
+        {
+          "part": "Tail",
+          "sever": 3,
+          "blunt": 2,
+          "ranged": 1,
+          "note": "Break to reduce paralysis range."
+        },
+        {
+          "part": "Forelegs",
+          "sever": 2,
+          "blunt": 2,
+          "ranged": 1,
+          "note": "Trip with focused damage."
+        },
+        {
+          "part": "Back",
+          "sever": 1,
+          "blunt": 1,
+          "ranged": 1,
+          "note": "Charged fur; avoid until discharged."
+        }
+      ],
+      "strategy": [
+        "Water short-circuits the charged fur.",
+        "Dodge toward the tail during wall jumps.",
+        "Break the tail to shrink the paralysis hitbox."
+      ],
+      "materials": [
+        {
+          "name": "Tobi-Kadachi Pelt",
+          "rarity": 3,
+          "source": "Body carve"
+        },
+        {
+          "name": "Tobi-Kadachi Claw",
+          "rarity": 4,
+          "source": "Foreleg break"
+        },
+        {
+          "name": "Tobi-Kadachi Membrane",
+          "rarity": 4,
+          "source": "Wing break"
+        },
+        {
+          "name": "Electro Sac",
+          "rarity": 3,
+          "source": "Body carve"
+        },
+        {
+          "name": "Wyvern Gem",
+          "rarity": 6,
+          "source": "Rare carve / capture"
+        }
+      ]
+    },
+    {
+      "id": "legiana",
+      "name": "Legiana",
+      "title": "Shrieking Wyvern",
+      "threat": 8,
+      "weakness": {
+        "primary": "THUNDER",
+        "secondary": "FIRE"
+      },
+      "habitat": "Coral Highlands",
+      "ailments": [
+        "ICE BLIGHT",
+        "STUN"
+      ],
+      "hitzones": [
+        {
+          "part": "Head",
+          "sever": 3,
+          "blunt": 2,
+          "ranged": 3,
+          "note": "Best ranged target."
+        },
+        {
+          "part": "Wings",
+          "sever": 3,
+          "blunt": 1,
+          "ranged": 3,
+          "note": "Break to ground it."
+        },
+        {
+          "part": "Tail",
+          "sever": 2,
+          "blunt": 1,
+          "ranged": 2,
+          "note": "Sever for a carve."
+        },
+        {
+          "part": "Legs",
+          "sever": 2,
+          "blunt": 2,
+          "ranged": 1,
+          "note": "Trip with Thunder pressure."
+        }
+      ],
+      "strategy": [
+        "Thunder cracks the ice armor; Fire is the backup.",
+        "Focus the wings to ground it early.",
+        "Bring Nulberries or a cleanse buddy for Iceblight."
+      ],
+      "materials": [
+        {
+          "name": "Legiana Hide",
+          "rarity": 4,
+          "source": "Body carve"
+        },
+        {
+          "name": "Legiana Claw",
+          "rarity": 4,
+          "source": "Leg break"
+        },
+        {
+          "name": "Legiana Webbing",
+          "rarity": 5,
+          "source": "Wing break"
+        },
+        {
+          "name": "Frost Sac",
+          "rarity": 3,
+          "source": "Body carve"
+        },
+        {
+          "name": "Legiana Gem",
+          "rarity": 6,
+          "source": "Rare carve / capture"
+        }
+      ]
+    }
+  ]
+}
