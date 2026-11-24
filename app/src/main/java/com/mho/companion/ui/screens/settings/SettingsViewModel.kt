@@ -11,6 +11,7 @@ import com.mho.companion.MhoApp
 import com.mho.companion.data.repository.SyncState
 import com.mho.companion.domain.model.Content
 import com.mho.companion.domain.model.CustomLoadout
+import com.mho.companion.domain.model.SavedMixSet
 import com.mho.companion.domain.model.WishlistItem
 import com.mho.companion.service.OverlayService
 import kotlinx.coroutines.delay
@@ -29,6 +30,7 @@ class SettingsViewModel(app: Application) : AndroidViewModel(app) {
     val syncState: StateFlow<SyncState> = container.contentRepository.syncState
     val wishlist: Flow<List<WishlistItem>> = container.userDataRepository.wishlist
     val customLoadouts: Flow<List<CustomLoadout>> = container.userDataRepository.customLoadouts
+    val mixSets: Flow<List<SavedMixSet>> = container.userDataRepository.mixSets
     val checklist: Flow<Set<String>> = container.userDataRepository.checklist
 
     private val _message = MutableStateFlow<String?>(null)
@@ -56,7 +58,7 @@ class SettingsViewModel(app: Application) : AndroidViewModel(app) {
         viewModelScope.launch {
             container.backupManager.export(uri)
                 .onSuccess { payload ->
-                    _message.value = "Backup saved: ${payload.wishlist.size} wishlist items, ${payload.customLoadouts.size} loadouts."
+                    _message.value = "Backup saved: ${payload.wishlist.size} wishlist items, ${payload.customLoadouts.size} loadouts, ${payload.mixSets.size} mix-sets."
                 }
                 .onFailure { error ->
                     _message.value = "Export failed: ${error.message ?: "unknown error"}"
@@ -68,7 +70,7 @@ class SettingsViewModel(app: Application) : AndroidViewModel(app) {
         viewModelScope.launch {
             container.backupManager.import(uri)
                 .onSuccess { payload ->
-                    _message.value = "Backup restored: ${payload.wishlist.size} wishlist items, ${payload.customLoadouts.size} loadouts."
+                    _message.value = "Backup restored: ${payload.wishlist.size} wishlist items, ${payload.customLoadouts.size} loadouts, ${payload.mixSets.size} mix-sets."
                 }
                 .onFailure { error ->
                     _message.value = "Import failed: ${error.message ?: "invalid file"}"
@@ -79,7 +81,7 @@ class SettingsViewModel(app: Application) : AndroidViewModel(app) {
     fun clearLocalData() {
         viewModelScope.launch {
             container.userDataRepository.clearAll()
-            _message.value = "Checklist, wishlist and custom loadouts reset."
+            _message.value = "Checklist, wishlist, loadouts and mix-sets reset."
         }
     }
 

@@ -9,6 +9,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -52,6 +54,7 @@ import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.mho.companion.data.repository.SyncState
 import com.mho.companion.domain.model.CustomLoadout
+import com.mho.companion.domain.model.SavedMixSet
 import com.mho.companion.domain.model.WishlistItem
 import com.mho.companion.ui.components.ConfirmDialog
 import com.mho.companion.ui.components.ElementBadge
@@ -73,7 +76,7 @@ import com.mho.companion.ui.theme.TextPrimary
 import com.mho.companion.ui.theme.TextSecondary
 import com.mho.companion.ui.theme.WeakRed
 
-private val ModuleOrder = listOf("codes", "builds", "characters", "monsters", "guides")
+private val ModuleOrder = listOf("codes", "builds", "characters", "monsters", "guides", "armors")
 
 @Composable
 fun SettingsScreen(
@@ -84,6 +87,7 @@ fun SettingsScreen(
     val syncState by viewModel.syncState.collectAsStateWithLifecycle()
     val wishlist by viewModel.wishlist.collectAsStateWithLifecycle(initialValue = emptyList<WishlistItem>())
     val loadouts by viewModel.customLoadouts.collectAsStateWithLifecycle(initialValue = emptyList<CustomLoadout>())
+    val mixSets by viewModel.mixSets.collectAsStateWithLifecycle(initialValue = emptyList<SavedMixSet>())
     val checklist by viewModel.checklist.collectAsStateWithLifecycle(initialValue = emptySet<String>())
     val overlayPermission by viewModel.overlayPermission.collectAsStateWithLifecycle()
     val overlayRunning by viewModel.overlayRunning.collectAsStateWithLifecycle()
@@ -171,7 +175,7 @@ fun SettingsScreen(
                         Spacer(Modifier.height(5.dp))
                         Text(
                             text = if (remoteBase.isBlank()) {
-                                "Remote sync is not configured. All six modules are bundled in the APK and work offline."
+                                "Remote sync is not configured. All seven modules are bundled in the APK and work offline."
                             } else {
                                 remoteBase
                             },
@@ -265,15 +269,21 @@ fun SettingsScreen(
                         SectionHeader(title = "Backup & restore")
                         Spacer(Modifier.height(5.dp))
                         Text(
-                            text = "Export a single JSON file with your checklist, farming wishlist, and custom loadouts. Content modules are not included.",
+                            text = "Export a single JSON file with your checklist, farming wishlist, custom loadouts, and saved mix-sets. Content modules are not included.",
                             style = MaterialTheme.typography.bodySmall,
                             color = TextSecondary
                         )
                         Spacer(Modifier.height(6.dp))
-                        Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .horizontalScroll(rememberScrollState()),
+                            horizontalArrangement = Arrangement.spacedBy(6.dp)
+                        ) {
                             Pill(text = "${checklist.size} CHECKED", color = AccentGreen)
                             Pill(text = "${wishlist.size} WISHLIST", color = AccentGreen)
                             Pill(text = "${loadouts.size} LOADOUTS", color = AccentGreen)
+                            Pill(text = "${mixSets.size} MIX-SETS", color = AccentGreen)
                         }
                         Spacer(Modifier.height(9.dp))
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {

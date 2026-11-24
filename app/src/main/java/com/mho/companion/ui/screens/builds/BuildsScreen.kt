@@ -48,6 +48,7 @@ import com.mho.companion.domain.model.CustomLoadout
 import com.mho.companion.domain.model.Element
 import com.mho.companion.domain.model.ElementBuild
 import com.mho.companion.domain.model.Role
+import com.mho.companion.domain.model.SavedMixSet
 import com.mho.companion.domain.model.WeaponBuild
 import com.mho.companion.domain.model.WeaponType
 import com.mho.companion.ui.components.AttackTypeBadge
@@ -84,6 +85,7 @@ fun BuildsScreen(
 ) {
     val content by viewModel.content.collectAsStateWithLifecycle()
     val loadouts by viewModel.customLoadouts.collectAsStateWithLifecycle(initialValue = emptyList<CustomLoadout>())
+    val mixSets by viewModel.mixSets.collectAsStateWithLifecycle(initialValue = emptyList<SavedMixSet>())
 
     var segment by rememberSaveable { mutableIntStateOf(0) }
     var query by rememberSaveable { mutableStateOf("") }
@@ -137,6 +139,15 @@ fun BuildsScreen(
             Box(modifier = Modifier.weight(1f).fillMaxWidth(), contentAlignment = Alignment.Center) {
                 LoadingPane()
             }
+        } else if (segment == 2) {
+            MixSetBuilderSection(
+                content = data,
+                mixSets = mixSets,
+                modifier = Modifier.weight(1f),
+                onSaveMixSet = viewModel::saveMixSet,
+                onDeleteMixSet = viewModel::deleteMixSet,
+                onAddMaterials = viewModel::addWishlistBatch
+            )
         } else {
             val builds = remember(data, selectedElement, selectedWeapon, query) {
                 filterBuilds(data, selectedElement, selectedWeapon, query)
@@ -353,7 +364,7 @@ private fun SegmentedTabs(selected: Int, onSelect: (Int) -> Unit) {
             .border(1.dp, GlassBorder, RoundedCornerShape(14.dp))
             .padding(4.dp)
     ) {
-        listOf("Builds", "Adventurers").forEachIndexed { index, label ->
+        listOf("Builds", "Adventurers", "Mix-Set").forEachIndexed { index, label ->
             val active = selected == index
             Box(
                 modifier = Modifier

@@ -1,0 +1,383 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-24",
+  "armors": [
+    {
+      "id": "emberforge-helm",
+      "name": "Emberforge Helm",
+      "slot": "Head",
+      "rarity": 5,
+      "element_res": "FIRE",
+      "skills": [
+        { "skillName": "Fire Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Offensive Defense", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Rathalos Scale", "qty": 2 },
+        { "name": "Flame Sac", "qty": 1 }
+      ]
+    },
+    {
+      "id": "emberforge-mail",
+      "name": "Emberforge Mail",
+      "slot": "Chest",
+      "rarity": 5,
+      "element_res": "FIRE",
+      "skills": [
+        { "skillName": "Fire Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Charge Enhancement", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Rathalos Scale", "qty": 3 },
+        { "name": "Anjanath Pelt", "qty": 2 }
+      ]
+    },
+    {
+      "id": "emberforge-vambraces",
+      "name": "Emberforge Vambraces",
+      "slot": "Arms",
+      "rarity": 5,
+      "element_res": "FIRE",
+      "skills": [
+        { "skillName": "Fire Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Charge Enhancement", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Flame Sac", "qty": 2 },
+        { "name": "Apex Bone", "qty": 1 }
+      ]
+    },
+    {
+      "id": "emberforge-coil",
+      "name": "Emberforge Coil",
+      "slot": "Waist",
+      "rarity": 5,
+      "element_res": "FIRE",
+      "skills": [
+        { "skillName": "Fire Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Combo Enhancement", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Rathalos Scale", "qty": 2 },
+        { "name": "Flame Sac", "qty": 1 }
+      ]
+    },
+    {
+      "id": "emberforge-greaves",
+      "name": "Emberforge Greaves",
+      "slot": "Legs",
+      "rarity": 5,
+      "element_res": "FIRE",
+      "skills": [
+        { "skillName": "Fire Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Morph Boost", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Anjanath Pelt", "qty": 2 },
+        { "name": "Apex Bone", "qty": 1 }
+      ]
+    },
+    {
+      "id": "tidecaller-helm",
+      "name": "Tidecaller Helm",
+      "slot": "Head",
+      "rarity": 4,
+      "element_res": "WATER",
+      "skills": [
+        { "skillName": "Water Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Flash Draw", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Jyuratodus Fin", "qty": 2 },
+        { "name": "Aqua Sac", "qty": 1 }
+      ]
+    },
+    {
+      "id": "tidecaller-mail",
+      "name": "Tidecaller Mail",
+      "slot": "Chest",
+      "rarity": 4,
+      "element_res": "WATER",
+      "skills": [
+        { "skillName": "Water Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Capacity Boost", "level": 1, "maxLevel": 3 }
+      ],
+      "materials": [
+        { "name": "Jyuratodus Fin", "qty": 3 },
+        { "name": "Aqua Sac", "qty": 2 }
+      ]
+    },
+    {
+      "id": "tidecaller-vambraces",
+      "name": "Tidecaller Vambraces",
+      "slot": "Arms",
+      "rarity": 4,
+      "element_res": "WATER",
+      "skills": [
+        { "skillName": "Water Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Flash Draw", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Aqua Sac", "qty": 2 },
+        { "name": "Monster Bone+", "qty": 1 }
+      ]
+    },
+    {
+      "id": "tidecaller-coil",
+      "name": "Tidecaller Coil",
+      "slot": "Waist",
+      "rarity": 4,
+      "element_res": "WATER",
+      "skills": [
+        { "skillName": "Water Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Offensive Defense", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Jyuratodus Fin", "qty": 2 },
+        { "name": "Aqua Sac", "qty": 1 }
+      ]
+    },
+    {
+      "id": "tidecaller-greaves",
+      "name": "Tidecaller Greaves",
+      "slot": "Legs",
+      "rarity": 4,
+      "element_res": "WATER",
+      "skills": [
+        { "skillName": "Water Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Combo Enhancement", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Jyuratodus Fin", "qty": 2 },
+        { "name": "Monster Bone+", "qty": 2 }
+      ]
+    },
+    {
+      "id": "stormbreak-helm",
+      "name": "Stormbreak Helm",
+      "slot": "Head",
+      "rarity": 4,
+      "element_res": "THUNDER",
+      "skills": [
+        { "skillName": "Thunder Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Spirit Bind Blade", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Tobi-Kadachi Electrode", "qty": 2 },
+        { "name": "Electro Sac", "qty": 1 }
+      ]
+    },
+    {
+      "id": "stormbreak-mail",
+      "name": "Stormbreak Mail",
+      "slot": "Chest",
+      "rarity": 4,
+      "element_res": "THUNDER",
+      "skills": [
+        { "skillName": "Thunder Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Morph Boost", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Tobi-Kadachi Pelt", "qty": 3 },
+        { "name": "Electro Sac", "qty": 2 }
+      ]
+    },
+    {
+      "id": "stormbreak-vambraces",
+      "name": "Stormbreak Vambraces",
+      "slot": "Arms",
+      "rarity": 4,
+      "element_res": "THUNDER",
+      "skills": [
+        { "skillName": "Thunder Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Spirit Bind Blade", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Tobi-Kadachi Electrode", "qty": 2 },
+        { "name": "Electro Sac", "qty": 2 }
+      ]
+    },
+    {
+      "id": "stormbreak-coil",
+      "name": "Stormbreak Coil",
+      "slot": "Waist",
+      "rarity": 4,
+      "element_res": "THUNDER",
+      "skills": [
+        { "skillName": "Thunder Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Charge Enhancement", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Tobi-Kadachi Pelt", "qty": 2 },
+        { "name": "Electro Sac", "qty": 1 }
+      ]
+    },
+    {
+      "id": "stormbreak-greaves",
+      "name": "Stormbreak Greaves",
+      "slot": "Legs",
+      "rarity": 4,
+      "element_res": "THUNDER",
+      "skills": [
+        { "skillName": "Thunder Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Offensive Defense", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Tobi-Kadachi Electrode", "qty": 2 },
+        { "name": "Monster Bone+", "qty": 2 }
+      ]
+    },
+    {
+      "id": "frostveil-helm",
+      "name": "Frostveil Helm",
+      "slot": "Head",
+      "rarity": 4,
+      "element_res": "ICE",
+      "skills": [
+        { "skillName": "Ice Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Combo Enhancement", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Legiana Webbing", "qty": 2 },
+        { "name": "Frozen Sac", "qty": 1 }
+      ]
+    },
+    {
+      "id": "frostveil-mail",
+      "name": "Frostveil Mail",
+      "slot": "Chest",
+      "rarity": 4,
+      "element_res": "ICE",
+      "skills": [
+        { "skillName": "Ice Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Combo Enhancement", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Legiana Hide", "qty": 3 },
+        { "name": "Frozen Sac", "qty": 2 }
+      ]
+    },
+    {
+      "id": "frostveil-vambraces",
+      "name": "Frostveil Vambraces",
+      "slot": "Arms",
+      "rarity": 4,
+      "element_res": "ICE",
+      "skills": [
+        { "skillName": "Ice Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Capacity Boost", "level": 1, "maxLevel": 3 }
+      ],
+      "materials": [
+        { "name": "Legiana Webbing", "qty": 2 },
+        { "name": "Frozen Sac", "qty": 1 }
+      ]
+    },
+    {
+      "id": "frostveil-coil",
+      "name": "Frostveil Coil",
+      "slot": "Waist",
+      "rarity": 4,
+      "element_res": "ICE",
+      "skills": [
+        { "skillName": "Ice Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Flash Draw", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Legiana Hide", "qty": 2 },
+        { "name": "Frozen Sac", "qty": 2 }
+      ]
+    },
+    {
+      "id": "frostveil-greaves",
+      "name": "Frostveil Greaves",
+      "slot": "Legs",
+      "rarity": 4,
+      "element_res": "ICE",
+      "skills": [
+        { "skillName": "Ice Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Charge Enhancement", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Legiana Webbing", "qty": 2 },
+        { "name": "Monster Bone+", "qty": 2 }
+      ]
+    },
+    {
+      "id": "dreadwing-helm",
+      "name": "Dreadwing Helm",
+      "slot": "Head",
+      "rarity": 5,
+      "element_res": "DRAGON",
+      "skills": [
+        { "skillName": "Dragon Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Spirit Bind Blade", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Dragonbone Relic", "qty": 2 },
+        { "name": "Elder Dragon Blood", "qty": 1 }
+      ]
+    },
+    {
+      "id": "dreadwing-mail",
+      "name": "Dreadwing Mail",
+      "slot": "Chest",
+      "rarity": 5,
+      "element_res": "DRAGON",
+      "skills": [
+        { "skillName": "Dragon Damage Up", "level": 2, "maxLevel": 7 },
+        { "skillName": "Spirit Bind Blade", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Dragonbone Relic", "qty": 3 },
+        { "name": "Elder Dragon Blood", "qty": 1 }
+      ]
+    },
+    {
+      "id": "dreadwing-vambraces",
+      "name": "Dreadwing Vambraces",
+      "slot": "Arms",
+      "rarity": 5,
+      "element_res": "DRAGON",
+      "skills": [
+        { "skillName": "Dragon Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Morph Boost", "level": 2, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Dragonbone Relic", "qty": 2 },
+        { "name": "Elder Dragon Blood", "qty": 1 }
+      ]
+    },
+    {
+      "id": "dreadwing-coil",
+      "name": "Dreadwing Coil",
+      "slot": "Waist",
+      "rarity": 5,
+      "element_res": "DRAGON",
+      "skills": [
+        { "skillName": "Dragon Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Spirit Bind Blade", "level": 1, "maxLevel": 5 },
+        { "skillName": "Capacity Boost", "level": 1, "maxLevel": 3 }
+      ],
+      "materials": [
+        { "name": "Dragonbone Relic", "qty": 2 },
+        { "name": "Elder Dragon Blood", "qty": 1 }
+      ]
+    },
+    {
+      "id": "dreadwing-greaves",
+      "name": "Dreadwing Greaves",
+      "slot": "Legs",
+      "rarity": 5,
+      "element_res": "DRAGON",
+      "skills": [
+        { "skillName": "Dragon Damage Up", "level": 1, "maxLevel": 7 },
+        { "skillName": "Flash Draw", "level": 1, "maxLevel": 5 },
+        { "skillName": "Spirit Bind Blade", "level": 1, "maxLevel": 5 }
+      ],
+      "materials": [
+        { "name": "Dragonbone Relic", "qty": 2 },
+        { "name": "Elder Dragon Blood", "qty": 2 }
+      ]
+    }
+  ]
+}

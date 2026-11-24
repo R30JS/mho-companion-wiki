@@ -26,11 +26,29 @@ data class CustomLoadout(
 )
 
 @Serializable
+data class MixSetPiece(
+    val slot: ArmorSlot,
+    val armorId: String
+)
+
+@Serializable
+data class SavedMixSet(
+    val id: String,
+    val name: String,
+    val weaponId: String? = null,
+    val weaponName: String = "",
+    val pieces: List<MixSetPiece> = emptyList(),
+    val notes: String = "",
+    val createdAt: Long = 0L
+)
+
+@Serializable
 data class BackupPayload(
     val app: String = "MHO Companion Wiki",
     val schema: Int = 1,
     val exportedAt: String = "",
     val checklist: List<String> = emptyList(),
     val wishlist: List<WishlistItem> = emptyList(),
-    val customLoadouts: List<CustomLoadout> = emptyList()
+    val customLoadouts: List<CustomLoadout> = emptyList(),
+    val mixSets: List<SavedMixSet> = emptyList()
 )

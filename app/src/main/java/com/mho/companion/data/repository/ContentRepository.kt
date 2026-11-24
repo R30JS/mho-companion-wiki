@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import com.mho.companion.data.local.userDataStore
+import com.mho.companion.domain.model.ArmorsData
 import com.mho.companion.domain.model.BuildsData
 import com.mho.companion.domain.model.CharactersData
 import com.mho.companion.domain.model.CodesData
@@ -103,6 +104,7 @@ class ContentRepository(
             downloadIfNewer(base, "characters", remote.characters_v, effective("characters", asset.characters_v, prefs), updated)
             downloadIfNewer(base, "monsters", remote.monsters_v, effective("monsters", asset.monsters_v, prefs), updated)
             downloadIfNewer(base, "guides", remote.guides_v, effective("guides", asset.guides_v, prefs), updated)
+            downloadIfNewer(base, "armors", remote.armors_v, effective("armors", asset.armors_v, prefs), updated)
 
             if (updated.isNotEmpty()) {
                 _content.value = readContent()
@@ -132,13 +134,15 @@ class ContentRepository(
         val characters = loadModule("characters", versions.characters_v, CharactersData.serializer(), prefs)
         val monsters = loadModule("monsters", versions.monsters_v, MonstersData.serializer(), prefs)
         val guides = loadModule("guides", versions.guides_v, GuidesData.serializer(), prefs)
+        val armors = loadModule("armors", versions.armors_v, ArmorsData.serializer(), prefs)
 
         val installed = mapOf(
             "codes" to effective("codes", versions.codes_v, prefs),
             "builds" to effective("builds", versions.builds_v, prefs),
             "characters" to effective("characters", versions.characters_v, prefs),
             "monsters" to effective("monsters", versions.monsters_v, prefs),
-            "guides" to effective("guides", versions.guides_v, prefs)
+            "guides" to effective("guides", versions.guides_v, prefs),
+            "armors" to effective("armors", versions.armors_v, prefs)
         )
 
         return Content(
@@ -147,6 +151,7 @@ class ContentRepository(
             characters = characters,
             monsters = monsters,
             guides = guides,
+            armors = armors,
             versions = versions,
             installedVersions = installed,
             loadedAt = System.currentTimeMillis()

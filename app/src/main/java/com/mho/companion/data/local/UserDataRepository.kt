@@ -5,6 +5,7 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import com.mho.companion.domain.model.BackupPayload
 import com.mho.companion.domain.model.CustomLoadout
+import com.mho.companion.domain.model.SavedMixSet
 import com.mho.companion.domain.model.WishlistItem
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
@@ -28,6 +29,7 @@ class UserDataRepository(private val context: Context) {
         val checklist = stringPreferencesKey("checklist_items")
         val wishlist = stringPreferencesKey("farming_wishlist")
         val loadouts = stringPreferencesKey("custom_loadouts")
+        val mixSets = stringPreferencesKey("mix_sets")
     }
 
     val checklist: Flow<Set<String>> = context.userDataStore.data.map { prefs ->
@@ -40,6 +42,10 @@ class UserDataRepository(private val context: Context) {
 
     val customLoadouts: Flow<List<CustomLoadout>> = context.userDataStore.data.map { prefs ->
         decode<List<CustomLoadout>>(prefs[Keys.loadouts], emptyList())
+    }
+
+    val mixSets: Flow<List<SavedMixSet>> = context.userDataStore.data.map { prefs ->
+        decode<List<SavedMixSet>>(prefs[Keys.mixSets], emptyList())
     }
 
     suspend fun setChecklistItem(id: String, checked: Boolean) {
@@ -63,6 +69,34 @@ class UserDataRepository(private val context: Context) {
                     have = 0
                 )
             }
+        }
+    }
+
+    suspend fun addWishlistBatch(materials: List<Pair<String, Int>>, source: String) {
+        if (materials.isEmpty()) return
+        editWishlist { items ->
+            val next = items.toMutableList()
+            materials.forEach { (label, qty) ->
+                val safeQty = qty.coerceIn(1, 999)
+                val index = next.indexOfFirst {
+                    it.label.equals(label, ignoreCase = true) && it.source == source
+                }
+                if (index >= 0) {
+                    val current = next[index]
+                    next[index] = current.copy(
+                        target = (current.target + safeQty).coerceIn(1, 999)
+                    )
+                } else {
+                    next += WishlistItem(
+                        id = UUID.randomUUID().toString(),
+                        label = label,
+                        source = source,
+                        target = safeQty,
+                        have = 0
+                    )
+                }
+            }
+            next
         }
     }
 
@@ -114,13 +148,35 @@ class UserDataRepository(private val context: Context) {
         }
     }
 
+    suspend fun saveMixSet(mixSet: SavedMixSet) {
+        context.userDataStore.edit { prefs ->
+            val current = decode<List<SavedMixSet>>(prefs[Keys.mixSets], emptyList())
+            val next = if (current.any { it.id == mixSet.id }) {
+                current.map { if (it.id == mixSet.id) mixSet else it }
+            } else {
+                current + mixSet.copy(
+                    createdAt = if (mixSet.createdAt == 0L) System.currentTimeMillis() else mixSet.createdAt
+                )
+            }
+            prefs[Keys.mixSets] = encode(next)
+        }
+    }
+
+    suspend fun deleteMixSet(id: String) {
+        context.userDataStore.edit { prefs ->
+            val current = decode<List<SavedMixSet>>(prefs[Keys.mixSets], emptyList())
+            prefs[Keys.mixSets] = encode(current.filterNot { it.id == id })
+        }
+    }
+
     suspend fun snapshot(): BackupPayload {
         val prefs = context.userDataStore.data.first()
         return BackupPayload(
             exportedAt = ZonedDateTime.now().format(DateTimeFormatter.ISO_OFFSET_DATE_TIME),
             checklist = decode<List<String>>(prefs[Keys.checklist], emptyList()),
             wishlist = decode<List<WishlistItem>>(prefs[Keys.wishlist], emptyList()),
-            customLoadouts = decode<List<CustomLoadout>>(prefs[Keys.loadouts], emptyList())
+            customLoadouts = decode<List<CustomLoadout>>(prefs[Keys.loadouts], emptyList()),
+            mixSets = decode<List<SavedMixSet>>(prefs[Keys.mixSets], emptyList())
         )
     }
 
@@ -129,6 +185,7 @@ class UserDataRepository(private val context: Context) {
             prefs[Keys.checklist] = encode(payload.checklist)
             prefs[Keys.wishlist] = encode(payload.wishlist)
             prefs[Keys.loadouts] = encode(payload.customLoadouts)
+            prefs[Keys.mixSets] = encode(payload.mixSets)
         }
     }
 
@@ -137,6 +194,7 @@ class UserDataRepository(private val context: Context) {
             prefs.remove(Keys.checklist)
             prefs.remove(Keys.wishlist)
             prefs.remove(Keys.loadouts)
+            prefs.remove(Keys.mixSets)
         }
     }
 

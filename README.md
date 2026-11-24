@@ -10,11 +10,12 @@ Kotlin + Jetpack Compose Material 3, single-activity MVVM/Clean Architecture.
 
 - **Dark OLED glassmorphism theme** (`#0D1117` background, `#161B22` cards, 1dp borders)
 - **Element accents:** Fire `#FF5722`, Water `#03A9F4`, Thunder `#FFC107`, Ice `#00E5FF`, Dragon `#9C27B0`
-- **4 tabs:** Hub (codes, reset countdown, checklist, team synergy), Builds/Adventurers (filters, weapon deep-link to crafting, custom loadouts), Bestiary (hitzones, Hunt Mode keep-screen-on, material wishlist), Guides (accordion + ailment/recipe cheat sheet)
+- **4 tabs:** Hub (codes, reset countdown, checklist, team synergy), Builds/Adventurers (filters, weapon deep-link to crafting, custom loadouts, **Mix-Set Builder**), Bestiary (hitzones, Hunt Mode keep-screen-on, material wishlist), Guides (accordion + ailment/recipe cheat sheet)
+- **Mix-Set Builder:** six-slot weapon + armor picker, armor skill filter/sort, live capped skill totals with max-level stars, saved mix-sets in DataStore/backups, and one-tap crafting materials to the wishlist
 - **Search bar + filter chips pinned above bottom navigation**
 - **Star ratings, Sever/Blunt/Ranged badges, colored hitzone indicators, haptics on copy/check**
 - **Settings:** JSON backup/restore via system file picker, overlay bubble service (SYSTEM_ALERT_WINDOW permission), module sync status, local data reset, about
-- **Offline-first:** six bundled JSON modules always available; optional remote version sync via Ktor; DataStore + kotlinx.serialization for user data
+- **Offline-first:** seven bundled JSON modules always available; optional remote version sync via Ktor; DataStore + kotlinx.serialization for user data
 - **Deep-link style navigation:** `build/{element}/{weaponId}`, `adventurer/{id}`, `monster/{id}`, `hunt/{id}`
 
 ## Project layout
@@ -23,7 +24,7 @@ Kotlin + Jetpack Compose Material 3, single-activity MVVM/Clean Architecture.
 mho-companion-wiki/
 ├── app/
 │   ├── src/main/assets/              # version.json, codes.json, builds.json,
-│   │                               # characters.json, monsters.json, guides.json
+│   │                               # characters.json, monsters.json, guides.json, armors.json
 │   ├── src/main/java/com/mho/companion/
 │   │   ├── AppContainer.kt           # DI-ish container: repos, http client
 │   │   ├── MainActivity.kt           # edge-to-edge Compose activity
@@ -51,9 +52,10 @@ Expected output:
 
 ```
 VALIDATION OK
-  modules: version.json, codes.json, builds.json, characters.json, monsters.json, guides.json
+  modules: version.json, codes.json, builds.json, characters.json, monsters.json, guides.json, armors.json
   builds: 40, adventurers: 14, monsters: 7
   codes: 4, guide sections: 6, ailments: 8, recipes: 6
+  armors: 25, armor skills: 12
 ```
 
 ## CI / release
@@ -69,6 +71,8 @@ adb install app-debug.apk
 ```
 
 Overlay bubble requires the system **Draw over other apps** permission, granted from Settings > Field Kit > Floating hunt overlay.
+
+Mix-sets are stored in DataStore and included in Settings > Export JSON. The Mix-Set Builder's **Add All Materials** button merges every weapon and armor crafting requirement into the Bestiary wishlist.
 
 ## Data notes
 

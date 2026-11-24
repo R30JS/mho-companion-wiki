@@ -1,5 +1,6 @@
 package com.mho.companion.domain.model
 
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -10,7 +11,8 @@ data class ModuleVersions(
     val builds_v: Int = 1,
     val characters_v: Int = 1,
     val monsters_v: Int = 1,
-    val guides_v: Int = 1
+    val guides_v: Int = 1,
+    val armors_v: Int = 1
 )
 
 @Serializable
@@ -153,6 +155,40 @@ data class MonsterMaterial(
 )
 
 @Serializable
+enum class ArmorSlot(val label: String) {
+    @SerialName("Head") HEAD("Head"),
+    @SerialName("Chest") CHEST("Chest"),
+    @SerialName("Arms") ARMS("Arms"),
+    @SerialName("Waist") WAIST("Waist"),
+    @SerialName("Legs") LEGS("Legs")
+}
+
+@Serializable
+data class ArmorSkill(
+    val skillName: String,
+    val level: Int = 1,
+    val maxLevel: Int = 5
+)
+
+@Serializable
+data class ArmorPiece(
+    val id: String,
+    val name: String,
+    val slot: ArmorSlot,
+    val rarity: Int = 1,
+    @SerialName("element_res") val elementRes: Element = Element.NONE,
+    val skills: List<ArmorSkill> = emptyList(),
+    val materials: List<MaterialRequirement> = emptyList()
+)
+
+@Serializable
+data class ArmorsData(
+    val version: Int = 1,
+    val updatedAt: String = "",
+    val armors: List<ArmorPiece> = emptyList()
+)
+
+@Serializable
 data class GuidesData(
     val version: Int = 1,
     val updatedAt: String = "",
@@ -199,6 +235,7 @@ data class Content(
     val characters: CharactersData = CharactersData(),
     val monsters: MonstersData = MonstersData(),
     val guides: GuidesData = GuidesData(),
+    val armors: ArmorsData = ArmorsData(),
     val versions: ModuleVersions = ModuleVersions(),
     val installedVersions: Map<String, Int> = emptyMap(),
     val loadedAt: Long = 0L
@@ -217,4 +254,15 @@ data class Content(
 
     fun adventurer(id: String?): Adventurer? =
         characters.characters.firstOrNull { it.id == id }
+
+    fun armor(id: String?): ArmorPiece? =
+        armors.armors.firstOrNull { it.id == id }
+
+    fun armorsFor(slot: ArmorSlot): List<ArmorPiece> =
+        armors.armors.filter { it.slot == slot }
+
+    fun weaponById(id: String?): WeaponBuild? =
+        builds.elements.asSequence()
+            .flatMap { it.weapons.asSequence() }
+            .firstOrNull { it.id == id }
 }

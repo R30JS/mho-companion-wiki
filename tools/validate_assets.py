@@ -16,6 +16,7 @@ MODULES = {
     "characters.json": "CharactersData",
     "monsters.json": "MonstersData",
     "guides.json": "GuidesData",
+    "armors.json": "ArmorsData",
 }
 
 ELEMENTS = {"FIRE", "WATER", "THUNDER", "ICE", "DRAGON", "NONE"}
@@ -26,6 +27,13 @@ WEAPON_TYPES = {
 }
 ROLES = {"ASSAULT", "DISRUPTOR", "SUPPORT"}
 ATTACK_TYPES = {"SEVER", "BLUNT", "RANGED"}
+ARMOR_SLOTS = {"Head", "Chest", "Arms", "Waist", "Legs"}
+CORE_ARMOR_SKILLS = {
+    "Fire Damage Up", "Water Damage Up", "Thunder Damage Up", "Ice Damage Up",
+    "Dragon Damage Up", "Charge Enhancement", "Spirit Bind Blade",
+    "Offensive Defense", "Capacity Boost", "Combo Enhancement",
+    "Morph Boost", "Flash Draw",
+}
 
 EXPECTED_COUNTS = {
     "builds": 40,      # 5 elements x 8 weapon types
@@ -35,6 +43,7 @@ EXPECTED_COUNTS = {
     "guide sections": 6,
     "ailments": 8,
     "recipes": 6,
+    "armors": 25,
 }
 
 errors = []
@@ -65,13 +74,14 @@ def require_keys(obj, keys, where):
 
 def validate():
     version = load("version.json") or {}
-    require_keys(version, ["remoteBaseUrl", "codes_v", "builds_v", "characters_v", "monsters_v", "guides_v"], "version.json")
+    require_keys(version, ["remoteBaseUrl", "codes_v", "builds_v", "characters_v", "monsters_v", "guides_v", "armors_v"], "version.json")
 
     codes = load("codes.json") or {}
     builds = load("builds.json") or {}
     characters = load("characters.json") or {}
     monsters = load("monsters.json") or {}
     guides = load("guides.json") or {}
+    armors = load("armors.json") or {}
 
     # --- codes ---
     code_entries = codes.get("codes", [])
@@ -175,6 +185,41 @@ def validate():
     for recipe in recipes:
         require_keys(recipe, ["name", "effect"], f"guides/recipe/{recipe.get('name')}")
 
+    # --- armors ---
+    armor_entries = armors.get("armors", [])
+    seen_armors = set()
+    armor_skills = set()
+    for armor in armor_entries:
+        require_keys(armor, ["id", "name", "slot", "rarity", "element_res", "skills", "materials"], f"armors/{armor.get('id')}")
+        if armor.get("slot") not in ARMOR_SLOTS:
+            fail(f"armors/{armor.get('id')}: unknown slot '{armor.get('slot')}'")
+        if armor.get("element_res") not in ELEMENTS_WITH_CONTENT:
+            fail(f"armors/{armor.get('id')}: unknown element_res '{armor.get('element_res')}'")
+        if armor.get("rarity") not in (1, 2, 3, 4, 5):
+            fail(f"armors/{armor.get('id')}: rarity must be 1-5")
+        if armor.get("id") in seen_armors:
+            fail(f"duplicate armor id '{armor.get('id')}'")
+        seen_armors.add(armor.get("id"))
+        for skill in armor.get("skills", []):
+            require_keys(skill, ["skillName", "level", "maxLevel"], f"armors/{armor.get('id')} skill")
+            armor_skills.add(skill.get("skillName"))
+            if not isinstance(skill.get("level"), int) or skill["level"] < 1:
+                fail(f"armors/{armor.get('id')} skill {skill.get('skillName')}: level must be >= 1")
+            if not isinstance(skill.get("maxLevel"), int) or skill["maxLevel"] < skill.get("level", 0):
+                fail(f"armors/{armor.get('id')} skill {skill.get('skillName')}: maxLevel must be >= level")
+        for material in armor.get("materials", []):
+            require_keys(material, ["name", "qty"], f"armors/{armor.get('id')} material")
+            if material.get("qty", 0) < 1:
+                fail(f"armors/{armor.get('id')} material {material.get('name')}: qty must be >= 1")
+    if len(armor_entries) != EXPECTED_COUNTS["armors"]:
+        fail(f"armors: expected {EXPECTED_COUNTS['armors']} pieces, found {len(armor_entries)}")
+    missing_skills = CORE_ARMOR_SKILLS - armor_skills
+    if missing_skills:
+        fail(f"armors: missing core skills {sorted(missing_skills)}")
+    for slot in ARMOR_SLOTS:
+        if not any(armor.get("slot") == slot for armor in armor_entries):
+            fail(f"armors: no pieces for slot {slot}")
+
     # --- versions consistency ---
     if not version.get("remoteBaseUrl"):
         warnings.append("remoteBaseUrl is empty; remote sync is not configured (bundled data only)")
@@ -189,6 +234,7 @@ def validate():
     print(f"  modules: {', '.join(MODULES)}")
     print(f"  builds: {len(build_ids)}, adventurers: {len(adventurers)}, monsters: {len(monster_entries)}")
     print(f"  codes: {len(code_entries)}, guide sections: {len(sections)}, ailments: {len(ailments)}, recipes: {len(recipes)}")
+    print(f"  armors: {len(armor_entries)}, armor skills: {len(armor_skills)}")
     if warnings:
         print("  warnings:")
         for w in warnings:
